@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-08-12T10:45:08.621Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python</title>
+    <link href="http://example.com/2022/08/12/python/"/>
+    <id>http://example.com/2022/08/12/python/</id>
+    <published>2022-08-12T10:42:11.000Z</published>
+    <updated>2022-08-12T10:45:08.621Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Python（英國發音：/ˈpaɪθən/ 美國發音：/ˈpaɪθɑːn/），是一种广泛使用的解释型、高级和通用的编程语言。 &lt;/p&gt;
+&lt;p&gt;Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="编程语言" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux</title>
+    <link href="http://example.com/2022/08/12/linux/"/>
+    <id>http://example.com/2022/08/12/linux/</id>
+    <published>2022-08-12T10:41:53.000Z</published>
+    <updated>2022-08-13T02:15:24.938Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Linux</summary>
+        
+      
+    
+    
+    
+    <category term="系统" scheme="http://example.com/categories/%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="操作系统" scheme="http://example.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/08/10/hello-world/"/>
+    <id>http://example.com/2022/08/10/hello-world/</id>
+    <published>2022-08-10T14:12:47.678Z</published>
+    <updated>1985-10-26T08:15:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
