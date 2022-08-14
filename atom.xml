@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-12T10:45:08.621Z</updated>
+  <updated>2022-08-14T10:18:44.129Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,14 @@
     <link href="http://example.com/2022/08/12/python/"/>
     <id>http://example.com/2022/08/12/python/</id>
     <published>2022-08-12T10:42:11.000Z</published>
-    <updated>2022-08-12T10:45:08.621Z</updated>
+    <updated>2022-08-14T10:18:44.129Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Python（英國發音：/ˈpaɪθən/ 美國發音：/ˈpaɪθɑːn/），是一种广泛使用的解释型、高级和通用的编程语言。 &lt;/p&gt;
-&lt;p&gt;Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
@@ -54,12 +53,7 @@
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Linux</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
@@ -84,7 +78,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     

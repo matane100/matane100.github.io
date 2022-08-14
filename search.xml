@@ -3,7 +3,7 @@
   <entry>
     <title>linux</title>
     <url>/2022/08/12/linux/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <blockquote>
 <p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
 </blockquote>
@@ -27,10 +27,30 @@
   <entry>
     <title>python</title>
     <url>/2022/08/12/python/</url>
-    <content><![CDATA[<p>Python（英國發音：/ˈpaɪθən/ 美國發音：/ˈpaɪθɑːn/），是一种广泛使用的解释型、高级和通用的编程语言。 </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Python（英國發音：/ˈpaɪθən/ 美國發音：/ˈpaɪθɑːn/），是一种广泛使用的解释型、高级和通用的编程语言。 </p>
 <p>Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。 </p>
 <p>它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。</p>
-]]></content>
+
+        <div id="aplayer-mdqIedob" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-mdqIedob"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "她的睫毛",
+              author: "周杰伦",
+              url: "http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3",
+              pic: "http://home.ustc.edu.cn/~mmmwhy/jay.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>]]></content>
       <categories>
         <category>编程</category>
       </categories>
@@ -41,7 +61,7 @@
   <entry>
     <title>Hello World</title>
     <url>/2022/08/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
