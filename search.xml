@@ -16,7 +16,8 @@
 
 <p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
 <p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
-]]></content>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer3/","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid=120040"]}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>  
+<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"autoplay":true,"video":{"url":"some.mp4"},"danmaku":{"id":"someid","api":"https://api.prprpr.me/dplayer/","addition":["/some.json"]}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);player.on("loadstart",function(){console.log("loadstart")})})()</script>]]></content>
       <categories>
         <category>系统</category>
       </categories>
