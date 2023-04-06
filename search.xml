@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>linux</title>
+    <url>/2022/08/12/linux/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<blockquote>
+<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
+</blockquote>
+</blockquote>
+<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
+<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
+<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"api":"https://api.prprpr.me/dplayer3/","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid"]}});</script><!-- dplayer used1 -->  
+<div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"video":{"url":"some.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","id":"someid","addition":["/some.json"]}});</script><!-- dplayer used1 -->]]></content>
+      <categories>
+        <category>系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nmap使用指南</title>
+    <url>/2023/04/06/nmap-shi-yong-zhi-nan/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="你好，我就是测试"><a href="#你好，我就是测试" class="headerlink" title="你好，我就是测试"></a>你好，我就是测试</h2><h3 id="吃了吗？"><a href="#吃了吗？" class="headerlink" title="吃了吗？"></a>吃了吗？</h3><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"你好"</span><span class="token punctuation">)</span>
+</code></pre>
+]]></content>
+      <categories>
+        <category>渗透系统</category>
+      </categories>
+      <tags>
+        <tag>渗透工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第二篇文章</title>
+    <url>/2023/04/01/wo-de-di-er-pian-wen-zhang/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h1>]]></content>
+      <categories>
+        <category>渗透工具</category>
+      </categories>
+      <tags>
+        <tag>sqlmap工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的博客试试看</title>
+    <url>/2023/04/01/wo-de-bo-ke-shi-shi-kan/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="灭共是正义的必须"><a href="#灭共是正义的必须" class="headerlink" title="灭共是正义的必须"></a>灭共是正义的必须</h1><h2 id="可以卑微入尘土，不可扭曲入蛆虫！"><a href="#可以卑微入尘土，不可扭曲入蛆虫！" class="headerlink" title="可以卑微入尘土，不可扭曲入蛆虫！"></a>可以卑微入尘土，不可扭曲入蛆虫！</h2><p>非常棒，很棒，很好</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token string">"hello world !"</span>
+</code></pre>
+]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/04/01/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>渗透工具</category>
+      </categories>
+      <tags>
+        <tag>sqlmap工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python</title>
+    <url>/2022/08/12/python/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Python（英國發音：&#x2F;ˈpaɪθən&#x2F; 美國發音：&#x2F;ˈpaɪθɑːn&#x2F;），是一种广泛使用的解释型、高级和通用的编程语言。 </p>
+<p>Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。 </p>
+<p>它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。</p>
+<div class="video-container"><iframe   src=https://www.youtube.com/embed/Mgbwi6Sii7g?rel=0&amp;showinfo=0 frameborder=0 gesture=media allow=encrypted-media allowfullscreen></iframe></div>
+
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+</search>
