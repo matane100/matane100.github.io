@@ -39,7 +39,7 @@
   <entry>
     <title>我的第二篇文章</title>
     <url>/2023/04/01/wo-de-di-er-pian-wen-zhang/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h1><img src="img/12345.jpg" alt="这个是商标" style="zoom:200%;" />
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h1><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/12345.jpg" alt="经典图片"></p>
 ]]></content>
       <categories>
         <category>渗透工具</category>
