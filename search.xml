@@ -24,6 +24,35 @@
       </tags>
   </entry>
   <entry>
+    <title>netcat使用技巧</title>
+    <url>/2023/04/21/netcat-shi-yong-ji-qiao/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Netcat常用参数"><a href="#Netcat常用参数" class="headerlink" title="Netcat常用参数"></a>Netcat常用参数</h2><ul>
+<li>-l： 开启监听</li>
+<li>-p：指定端口</li>
+<li>-t： 以telnet形式应答</li>
+<li>-e：程序重定向</li>
+<li>-n：以数字形式表示ip</li>
+<li>-v：显示执行命令过程</li>
+<li>-z : 不进行交互，直接显示结果</li>
+<li>-u ：使用UDP协议传输</li>
+<li>-w : 设置超时时间</li>
+</ul>
+<h2 id="netcat-的对话功能"><a href="#netcat-的对话功能" class="headerlink" title="netcat 的对话功能"></a>netcat 的对话功能</h2><p>win10: nc64.ext  -l  -p  4444  (监听 4444端口)</p>
+<p>kali ：nc   192.168.49.130  4444  </p>
+<img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/win10.png" alt="win10" style="zoom: 80%;" />
+
+
+
+<img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/kali.png" alt="kali" style="zoom:80%;" />
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>netcat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nmap使用指南</title>
     <url>/2023/04/06/nmap-shi-yong-zhi-nan/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="你好，我就是测试"><a href="#你好，我就是测试" class="headerlink" title="你好，我就是测试"></a>你好，我就是测试</h2><h3 id="吃了吗？"><a href="#吃了吗？" class="headerlink" title="吃了吗？"></a>吃了吗？</h3><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"你好"</span><span class="token punctuation">)</span>

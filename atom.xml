@@ -6,7 +6,7 @@
   <link href="https://matane100.github.io/atom.xml" rel="self"/>
   
   <link href="https://matane100.github.io/"/>
-  <updated>2023-04-06T11:54:54.824Z</updated>
+  <updated>2023-04-21T06:50:57.620Z</updated>
   <id>https://matane100.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>netcat使用技巧</title>
+    <link href="https://matane100.github.io/2023/04/21/netcat-shi-yong-ji-qiao/"/>
+    <id>https://matane100.github.io/2023/04/21/netcat-shi-yong-ji-qiao/</id>
+    <published>2023-04-21T04:15:41.000Z</published>
+    <updated>2023-04-21T06:50:57.620Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="黑客工具" scheme="https://matane100.github.io/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="netcat" scheme="https://matane100.github.io/tags/netcat/"/>
+    
+  </entry>
   
   <entry>
     <title>nmap使用指南</title>
