@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title>wireshark抓包新手使用教程</title>
-    <url>/2023/05/24/nmap-de-shi-yong-fang-fa/</url>
+    <url>/2023/05/24/wireshark-shi-yong-ji-qiao/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>1、wireshark启动后，wireshark处于抓包状态中。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
 <p>2、执行需要抓包的操作，如在cmd窗口下执行ping <a href="http://www.baidu.com./">www.baidu.com。</a></p>
@@ -66,10 +66,10 @@
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
 ]]></content>
       <categories>
-        <category>分类</category>
+        <category>黑客工具</category>
       </categories>
       <tags>
-        <tag>标签</tag>
+        <tag>wireshark</tag>
       </tags>
   </entry>
   <entry>
