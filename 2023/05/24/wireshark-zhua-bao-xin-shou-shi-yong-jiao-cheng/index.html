@@ -6,10 +6,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="wireshark抓包新手使用教程, 黎明前的黑暗">
     <meta name="description" content="1、wireshark启动后，wireshark处于抓包状态中。
-
 2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。
-
-3、操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设">
+操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -295,7 +293,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    783
+                    781
                 </div>
                 
 
@@ -322,45 +320,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1、wireshark启动后，wireshark处于抓包状态中。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
-<p>2、执行需要抓包的操作，如在cmd窗口下执行ping <a target="_blank" rel="noopener" href="http://www.baidu.com./">www.baidu.com。</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
-<p>3、操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
-<p>4、Wireshakr抓包界面介绍</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031626223.png"></p>
-<p>5、WireShark 主要分为这几个界面</p>
-<p>Display Filter(显示过滤器)， 用于设置过滤条件进行数据包列表过滤。菜单路径：Analyze –&gt; Display Filters。</p>
+                <h2 id="1、wireshark启动后，wireshark处于抓包状态中。"><a href="#1、wireshark启动后，wireshark处于抓包状态中。" class="headerlink" title="1、wireshark启动后，wireshark处于抓包状态中。"></a>1、wireshark启动后，wireshark处于抓包状态中。</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
+<h2 id="2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。"><a href="#2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。" class="headerlink" title="2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。"></a>2、执行需要抓包的操作，如在cmd窗口下执行ping <a target="_blank" rel="noopener" href="http://www.baidu.com./">www.baidu.com。</a></h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
+<p>操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
+<h2 id="3、Wireshakr抓包界面介绍"><a href="#3、Wireshakr抓包界面介绍" class="headerlink" title="3、Wireshakr抓包界面介绍"></a>3、Wireshakr抓包界面介绍</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031626223.png"></p>
+<h2 id="4、WireShark-主要分为这几个界面"><a href="#4、WireShark-主要分为这几个界面" class="headerlink" title="4、WireShark 主要分为这几个界面"></a>4、WireShark 主要分为这几个界面</h2><p>Display Filter(显示过滤器)， 用于设置过滤条件进行数据包列表过滤。菜单路径：Analyze –&gt; Display Filters。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031634706.png"></p>
 <p>Packet List Pane(数据包列表)， 显示捕获到的数据包，每个数据包包含编号，时间戳，源地址，目标地址，协议，长度，以及数据包信息。 不同协议的数据包使用了不同的颜色区分显示。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031649468.png"></p>
-<p>6、Packet Details Pane(数据包详细信息), 在数据包列表中选择指定数据包，在数据包详细信息中会显示数据包的所有详细信息内容。数据包详细信息面板是最重要的，用来查看协议中的每一个字段。各行信息分别为</p>
+<p>Packet Details Pane(数据包详细信息), 在数据包列表中选择指定数据包，在数据包详细信息中会显示数据包的所有详细信息内容。数据包详细信息面板是最重要的，用来查看协议中的每一个字段。各行信息分别为</p>
 <p> （1）Frame:  物理层的数据帧概况</p>
 <p> （2）Ethernet II: 数据链路层以太网帧头部信息</p>
 <p> （3）Internet Protocol Version 4: 互联网层IP包头部信息</p>
 <p> （4）Transmission Control Protocol: 传输层T的数据段头部信息，此处是TCP</p>
 <p> （5）Hypertext Transfer Protocol: 应用层的信息，此处是HTTP协议</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031653476.png"></p>
-<p>7、TCP包的具体内容</p>
-<p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
+<h2 id="5、TCP包的具体内容"><a href="#5、TCP包的具体内容" class="headerlink" title="5、TCP包的具体内容"></a>5、TCP包的具体内容</h2><p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031659629.png"></p>
-<p> ip过滤</p>
-<p>  ip.src &#x3D;&#x3D;192.168.1.104 显示源地址为192.168.1.104的数据包列表</p>
+<h3 id="ip过滤"><a href="#ip过滤" class="headerlink" title="ip过滤"></a>ip过滤</h3><p>  ip.src &#x3D;&#x3D;192.168.1.104 显示源地址为192.168.1.104的数据包列表</p>
 <p>  ip.dst&#x3D;&#x3D;192.168.1.104, 显示目标地址为192.168.1.104的数据包列表</p>
 <p>  ip.addr &#x3D;&#x3D; 192.168.1.104 显示源IP地址或目标IP地址为192.168.1.104的数据包列表</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031725106.png"></p>
-<p>端口过滤</p>
-<p> tcp.port &#x3D;&#x3D;80, 显示源主机或者目的主机端口为80的数据包列表。</p>
+<h3 id="端口过滤"><a href="#端口过滤" class="headerlink" title="端口过滤"></a>端口过滤</h3><p> tcp.port &#x3D;&#x3D;80, 显示源主机或者目的主机端口为80的数据包列表。</p>
 <p> tcp.srcport &#x3D;&#x3D; 80, 只显示TCP协议的源主机端口为80的数据包列表。</p>
 <p> tcp.dstport &#x3D;&#x3D; 80，只显示TCP协议的目的主机端口为80的数据包列表。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031727211.png"></p>
-<p>  Wireshark抓包分析TCP三次握手</p>
-<p>（1）TCP三次握手连接建立过程</p>
+<h2 id="Wireshark抓包分析TCP三次握手"><a href="#Wireshark抓包分析TCP三次握手" class="headerlink" title="Wireshark抓包分析TCP三次握手"></a>Wireshark抓包分析TCP三次握手</h2><p>（1）TCP三次握手连接建立过程</p>
 <p>  Step1：客户端发送一个SYN&#x3D;1，ACK&#x3D;0标志的数据包给服务端，请求进行连接，这是第一次握手；</p>
 <p>  Step2：服务端收到请求并且允许连接的话，就会发送一个SYN&#x3D;1，ACK&#x3D;1标志的数据包给发送端，告诉它，可以通讯了，并且让客户    端发送一个确认数据包，这是第二次握手；</p>
 <p>  Step3：服务端发送一个SYN&#x3D;0，ACK&#x3D;1的数据包给客户端端，告诉它连接已被确认，这就是第三次握手。TCP连接建立，开始通讯。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/12345.jpg"></p>
 
                 
             </div>
