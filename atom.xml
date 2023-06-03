@@ -6,7 +6,7 @@
   <link href="https://matane100.github.io/atom.xml" rel="self"/>
   
   <link href="https://matane100.github.io/"/>
-  <updated>2023-06-03T10:24:32.105Z</updated>
+  <updated>2023-06-03T10:31:02.533Z</updated>
   <id>https://matane100.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://matane100.github.io/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/"/>
     <id>https://matane100.github.io/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</id>
     <published>2023-05-24T04:08:15.000Z</published>
-    <updated>2023-06-03T10:24:32.105Z</updated>
+    <updated>2023-06-03T10:31:02.533Z</updated>
     
     
       
@@ -196,7 +196,7 @@
     <link href="https://matane100.github.io/2022/08/12/linux/"/>
     <id>https://matane100.github.io/2022/08/12/linux/</id>
     <published>2022-08-12T10:41:53.000Z</published>
-    <updated>2023-04-03T01:00:19.429Z</updated>
+    <updated>2023-06-03T10:30:22.585Z</updated>
     
     
       
@@ -209,10 +209,10 @@
     
     
     
-    <category term="系统" scheme="https://matane100.github.io/categories/%E7%B3%BB%E7%BB%9F/"/>
+    <category term="操作系统" scheme="https://matane100.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="操作系统" scheme="https://matane100.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="kali Linux" scheme="https://matane100.github.io/tags/kali-Linux/"/>
     
   </entry>
   

