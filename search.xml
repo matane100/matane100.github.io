@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title>wireshark抓包新手使用教程</title>
-    <url>/2023/05/24/wireshark-shi-yong-ji-qiao/</url>
+    <url>/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>1、wireshark启动后，wireshark处于抓包状态中。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
 <p>2、执行需要抓包的操作，如在cmd窗口下执行ping <a href="http://www.baidu.com./">www.baidu.com。</a></p>
@@ -64,6 +64,7 @@
 <p>  Step2：服务端收到请求并且允许连接的话，就会发送一个SYN&#x3D;1，ACK&#x3D;1标志的数据包给发送端，告诉它，可以通讯了，并且让客户    端发送一个确认数据包，这是第二次握手；</p>
 <p>  Step3：服务端发送一个SYN&#x3D;0，ACK&#x3D;1的数据包给客户端端，告诉它连接已被确认，这就是第三次握手。TCP连接建立，开始通讯。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/12345.jpg"></p>
 ]]></content>
       <categories>
         <category>黑客工具</category>
