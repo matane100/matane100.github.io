@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="nmap使用指南, 黎明前的黑暗">
-    <meta name="description" content="你好，我就是测试吃了吗？print(&#34;你好&#34;)
-
-">
+    <meta name="keywords" content="nmap使用教程, 黎明前的黑暗">
+    <meta name="description" content="Nmap 简介nmap 是一个开源、免费的网络探测工具，适用于&amp;#96;windows、linux、mac 等多种操作系统。能够快速扫描大型网络或者单个主机，可以发现网络上有哪些主机，这些主机提供什么服务，服务运行在什么操作系统（包括版本系">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>nmap使用指南 | 黎明前的黑暗</title>
+    <title>nmap使用教程 | 黎明前的黑暗</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -230,12 +228,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">nmap使用指南</h1>
+                    <h1 class="description center-align post-title">nmap使用教程</h1>
                 </div>
             </div>
         </div>
@@ -259,8 +257,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7/">
-                                <span class="chip bg-color">渗透工具</span>
+                            <a href="/tags/nmap/">
+                                <span class="chip bg-color">nmap</span>
                             </a>
                         
                     </div>
@@ -271,8 +269,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B8%97%E9%80%8F%E7%B3%BB%E7%BB%9F/" class="post-category">
-                                渗透系统
+                            <a href="/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/" class="post-category">
+                                黑客工具
                             </a>
                         
                     </div>
@@ -293,7 +291,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    13
+                    461
                 </div>
                 
 
@@ -320,8 +318,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="你好，我就是测试"><a href="#你好，我就是测试" class="headerlink" title="你好，我就是测试"></a>你好，我就是测试</h2><h3 id="吃了吗？"><a href="#吃了吗？" class="headerlink" title="吃了吗？"></a>吃了吗？</h3><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"你好"</span><span class="token punctuation">)</span>
+                <h2 id="Nmap-简介"><a href="#Nmap-简介" class="headerlink" title="Nmap 简介"></a>Nmap 简介</h2><p>nmap 是一个开源、免费的网络探测工具，适用于&#96;windows、linux、mac 等多种操作系统。能够快速扫描大型网络或者单个主机，可以发现网络上有哪些主机，这些主机提供什么服务，服务运行在什么操作系统（包括版本系统），扩大攻击范围。</p>
+<ul>
+<li>识别目标网络内活跃主机</li>
+<li>扫描主机端口</li>
+<li>探测主机的操作系统</li>
+<li>利用自带脚本检测漏洞</li>
+</ul>
+<h2 id="基本快速扫描"><a href="#基本快速扫描" class="headerlink" title="基本快速扫描"></a>基本快速扫描</h2><pre class=" language-shell"><code class="language-shell">nmap 172.20.10.2
 </code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306040958659.png"></p>
+<h2 id="快速扫描多个目标"><a href="#快速扫描多个目标" class="headerlink" title="快速扫描多个目标"></a>快速扫描多个目标</h2><pre class=" language-shell"><code class="language-shell">nmap  14.215.177.39 172.20.10.2
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041005514.png"></p>
+<h2 id="详细描述输出扫描"><a href="#详细描述输出扫描" class="headerlink" title="详细描述输出扫描"></a>详细描述输出扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -vv 14.215.177.39
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041009486.png"></p>
+<h2 id="指定端口和范围扫描"><a href="#指定端口和范围扫描" class="headerlink" title="指定端口和范围扫描"></a>指定端口和范围扫描</h2><pre class=" language-shell"><code class="language-shell">namp -p 3389,20-200 192.168.227.133
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041013726.png"></p>
+<h2 id="扫描除所有子网主机"><a href="#扫描除所有子网主机" class="headerlink" title="扫描除所有子网主机"></a>扫描除所有子网主机</h2><pre class=" language-shell"><code class="language-shell">nmap 192.168.227.1/24 
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041021800.png"></p>
+<h2 id="显示扫描的所有主机的列表"><a href="#显示扫描的所有主机的列表" class="headerlink" title="显示扫描的所有主机的列表"></a>显示扫描的所有主机的列表</h2><pre class=" language-shell"><code class="language-shell">nmap -sL 192.168.227.1/24
+</code></pre>
+<h2 id="sP-ping-扫描"><a href="#sP-ping-扫描" class="headerlink" title="sP ping 扫描"></a>sP ping 扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sP 192.168.227.1-255
+</code></pre>
+<p>我们会用这个命令去扫描内网的一个ip范围，用来做内网的主机发现。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041136754.png"></p>
+<h2 id="sS-SYN半开放扫描"><a href="#sS-SYN半开放扫描" class="headerlink" title="sS SYN半开放扫描"></a>sS SYN半开放扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sS 192.168.227.1 
+</code></pre>
+<p>因为这种技术使得Nmap不需要通过完整的握手，就能获得远程主机的信息。Nmap发送SYN包到远程主机，但是它不会产生任何会话.因此不会在目标主机上产生任何日志记录,因为没有形成会话。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041149707.png"></p>
+<h2 id="sT-TCP扫描"><a href="#sT-TCP扫描" class="headerlink" title="sT TCP扫描"></a>sT TCP扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sT 192.168.227.133
+</code></pre>
+<p>只适用于找出TCP和UDP端口。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041153400.png"></p>
+<h2 id="O-OS操作系统类型的探测"><a href="#O-OS操作系统类型的探测" class="headerlink" title="O OS操作系统类型的探测"></a>O OS操作系统类型的探测</h2><pre class=" language-shell"><code class="language-shell">nmap -O 192.168.227.133
+</code></pre>
+<p>用来了解远程主机的操作系统和软件是非常有用的，通过获取的信息你可以知道已知的漏洞。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/20200619085402268.png"></p>
+<h2 id="osscan-guess-猜测匹配操作系统"><a href="#osscan-guess-猜测匹配操作系统" class="headerlink" title="osscan-guess 猜测匹配操作系统"></a>osscan-guess 猜测匹配操作系统</h2><pre class=" language-shell"><code class="language-shell">nmap -O --osscan-guess 192.168.227.133
+</code></pre>
+<p>猜测认为最接近目标的匹配操作系统类型.</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1685856242/zhngqi_nxbdsh.png"></p>
 
                 
             </div>
@@ -386,8 +426,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7/">
-                                    <span class="chip bg-color">渗透工具</span>
+                                <a href="/tags/nmap/">
+                                    <span class="chip bg-color">nmap</span>
                                 </a>
                             
                         </div>

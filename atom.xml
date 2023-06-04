@@ -67,11 +67,11 @@
   </entry>
   
   <entry>
-    <title>nmap使用指南</title>
+    <title>nmap使用教程</title>
     <link href="https://matane100.github.io/2023/04/06/nmap-shi-yong-zhi-nan/"/>
     <id>https://matane100.github.io/2023/04/06/nmap-shi-yong-zhi-nan/</id>
     <published>2023-04-06T11:49:43.000Z</published>
-    <updated>2023-04-06T11:54:54.824Z</updated>
+    <updated>2023-06-04T05:29:23.774Z</updated>
     
     
       
@@ -84,10 +84,10 @@
     
     
     
-    <category term="渗透系统" scheme="https://matane100.github.io/categories/%E6%B8%97%E9%80%8F%E7%B3%BB%E7%BB%9F/"/>
+    <category term="黑客工具" scheme="https://matane100.github.io/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="渗透工具" scheme="https://matane100.github.io/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7/"/>
+    <category term="nmap" scheme="https://matane100.github.io/tags/nmap/"/>
     
   </entry>
   

