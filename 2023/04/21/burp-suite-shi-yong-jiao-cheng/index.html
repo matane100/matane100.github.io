@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="nmap使用教程, 黎明前的黑暗">
-    <meta name="description" content="Nmap 简介nmap 是一个开源、免费的网络探测工具，适用于&amp;#96;windows、linux、mac 等多种操作系统。能够快速扫描大型网络或者单个主机，可以发现网络上有哪些主机，这些主机提供什么服务，服务运行在什么操作系统（包括版本系">
+    <meta name="keywords" content="Burp Suite使用技巧, 黎明前的黑暗">
+    <meta name="description" content="Burp SuiteBurp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>nmap使用教程 | 黎明前的黑暗</title>
+    <title>Burp Suite使用技巧 | 黎明前的黑暗</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -228,12 +228,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://res.cloudinary.com/dg3ytsk4a/image/upload/v1685863960/nmap_bqohts.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686191124/Burp-Suite-1024x677_acvqs1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">nmap使用教程</h1>
+                    <h1 class="description center-align post-title">Burp Suite使用技巧</h1>
                 </div>
             </div>
         </div>
@@ -257,8 +257,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/nmap/">
-                                <span class="chip bg-color">nmap</span>
+                            <a href="/tags/Burp-Suite/">
+                                <span class="chip bg-color">Burp Suite</span>
                             </a>
                         
                     </div>
@@ -282,28 +282,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-06
+                    2023-04-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-04
+                    2023-06-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    461
+                    911
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -323,50 +323,76 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Nmap-简介"><a href="#Nmap-简介" class="headerlink" title="Nmap 简介"></a>Nmap 简介</h2><p>nmap 是一个开源、免费的网络探测工具，适用于&#96;windows、linux、mac 等多种操作系统。能够快速扫描大型网络或者单个主机，可以发现网络上有哪些主机，这些主机提供什么服务，服务运行在什么操作系统（包括版本系统），扩大攻击范围。</p>
+                <h1 id="Burp-Suite"><a href="#Burp-Suite" class="headerlink" title="Burp Suite"></a>Burp Suite</h1><p>Burp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站上的安全漏洞或访问受限制的部分。</p>
+<p>该解决方案有三种版本：免费版、专业版和企业版。</p>
+<p>主要特点：</p>
 <ul>
-<li>识别目标网络内活跃主机</li>
-<li>扫描主机端口</li>
-<li>探测主机的操作系统</li>
-<li>利用自带脚本检测漏洞</li>
+<li>轻松点击即可实现全自动动态扫描；</li>
+<li>开箱即用的扫描配置；</li>
+<li>基于角色的访问控制和单点登录；</li>
+<li>CI集成；</li>
+<li>超过250个自定义测试工作流扩展；</li>
 </ul>
-<h2 id="基本快速扫描"><a href="#基本快速扫描" class="headerlink" title="基本快速扫描"></a>基本快速扫描</h2><pre class=" language-shell"><code class="language-shell">nmap 172.20.10.2
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306040958659.png"></p>
-<h2 id="快速扫描多个目标"><a href="#快速扫描多个目标" class="headerlink" title="快速扫描多个目标"></a>快速扫描多个目标</h2><pre class=" language-shell"><code class="language-shell">nmap  14.215.177.39 172.20.10.2
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041005514.png"></p>
-<h2 id="详细描述输出扫描"><a href="#详细描述输出扫描" class="headerlink" title="详细描述输出扫描"></a>详细描述输出扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -vv 14.215.177.39
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041009486.png"></p>
-<h2 id="指定端口和范围扫描"><a href="#指定端口和范围扫描" class="headerlink" title="指定端口和范围扫描"></a>指定端口和范围扫描</h2><pre class=" language-shell"><code class="language-shell">namp -p 3389,20-200 192.168.227.133
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041013726.png"></p>
-<h2 id="扫描除所有子网主机"><a href="#扫描除所有子网主机" class="headerlink" title="扫描除所有子网主机"></a>扫描除所有子网主机</h2><pre class=" language-shell"><code class="language-shell">nmap 192.168.227.1/24 
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041021800.png"></p>
-<h2 id="显示扫描的所有主机的列表"><a href="#显示扫描的所有主机的列表" class="headerlink" title="显示扫描的所有主机的列表"></a>显示扫描的所有主机的列表</h2><pre class=" language-shell"><code class="language-shell">nmap -sL 192.168.227.1/24
-</code></pre>
-<h2 id="sP-ping-扫描"><a href="#sP-ping-扫描" class="headerlink" title="sP ping 扫描"></a>sP ping 扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sP 192.168.227.1-255
-</code></pre>
-<p>我们会用这个命令去扫描内网的一个ip范围，用来做内网的主机发现。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041136754.png"></p>
-<h2 id="sS-SYN半开放扫描"><a href="#sS-SYN半开放扫描" class="headerlink" title="sS SYN半开放扫描"></a>sS SYN半开放扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sS 192.168.227.1 
-</code></pre>
-<p>因为这种技术使得Nmap不需要通过完整的握手，就能获得远程主机的信息。Nmap发送SYN包到远程主机，但是它不会产生任何会话.因此不会在目标主机上产生任何日志记录,因为没有形成会话。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041149707.png"></p>
-<h2 id="sT-TCP扫描"><a href="#sT-TCP扫描" class="headerlink" title="sT TCP扫描"></a>sT TCP扫描</h2><pre class=" language-shell"><code class="language-shell">nmap -sT 192.168.227.133
-</code></pre>
-<p>只适用于找出TCP和UDP端口。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306041153400.png"></p>
-<h2 id="O-OS操作系统类型的探测"><a href="#O-OS操作系统类型的探测" class="headerlink" title="O OS操作系统类型的探测"></a>O OS操作系统类型的探测</h2><pre class=" language-shell"><code class="language-shell">nmap -O 192.168.227.133
-</code></pre>
-<p>用来了解远程主机的操作系统和软件是非常有用的，通过获取的信息你可以知道已知的漏洞。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/20200619085402268.png"></p>
-<h2 id="osscan-guess-猜测匹配操作系统"><a href="#osscan-guess-猜测匹配操作系统" class="headerlink" title="osscan-guess 猜测匹配操作系统"></a>osscan-guess 猜测匹配操作系统</h2><pre class=" language-shell"><code class="language-shell">nmap -O --osscan-guess 192.168.227.133
-</code></pre>
-<p>猜测认为最接近目标的匹配操作系统类型.</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1685856242/zhngqi_nxbdsh.png"></p>
+<ol>
+<li><p>Target(目标)——显示目标目录结构的的一个功能</p>
+</li>
+<li><p>Proxy(代理)——拦截HTTP&#x2F;S的代理服务器，作为一个在浏览器和目标应用程序之间的中间人，允许你拦截，查看，修改在两个方向上的原始数据流。</p>
+</li>
+<li><p>Spider(蜘蛛)——应用智能感应的网络爬虫，它能完整的枚举应用程序的内容和功能。</p>
+</li>
+<li><p>Scanner(扫描器)——高级工具，执行后，它能自动地发现web 应用程序的安全漏洞。</p>
+</li>
+<li><p>Intruder(入侵)——一个定制的高度可配置的工具，对web应用程序进行自动化攻击，如：枚举标识符，收集有用的数据，以及使用fuzzing 技术探测常规漏洞。</p>
+</li>
+<li><p>Repeater(中继器)——一个靠手动操作来触发单独的HTTP 请求，并分析应用程序响应的工具。</p>
+</li>
+<li><p>Sequencer(会话)——用来分析那些不可预知的应用程序会话令牌和重要数据项的随机性的工具。</p>
+</li>
+<li><p>Decoder(解码器)——进行手动执行或对应用程序数据者智能解码编码的工具。</p>
+</li>
+<li><p>Comparer(对比)——通常是通过一些相关的请求和响应得到两项数据的一个可视化的“差异”。</p>
+</li>
+<li><p>Extender(扩展)——可以让你加载Burp Suite的扩展，使用你自己的或第三方代码来扩展Burp Suit的功能。</p>
+</li>
+<li><p>Options(设置)——对Burp Suite的一些设置。</p>
+</li>
+</ol>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188383/b1_twy2v9.png"></p>
+<p><strong>捕获HTTP数据包：</strong></p>
+<p>以firefox火狐浏览器为例：点击选项——高级——网络——设置——选择手动配置代理,HTTP代理输入：127.0.0.1端口：8080</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188477/b2_mxs5ak.png"></p>
+<p>打开burpsuite，点击proxy——Options勾选127.0.0.1:8080。在Intercept点击后显示Intercept on，启动。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188622/b3_ggs3f2.png"></p>
+<p>在firefox浏览器输入访问的真实地址，列如在网址输入10.1.1.174&#x2F;login.php，username输入test，password也输入test。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188622/b4_f4odsc.png"></p>
+<p>点击Login，页面卡住了，下面burpsuite闪框提示有新的数据传入，打开看抓包信息。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188623/b5_ybymnm.png"></p>
+<p><strong>爬虫：</strong></p>
+<p>在Target可以看到网站的目录结构。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189191/b6_hi628b.png"></p>
+<p>可以选择只显示有回显的数据或网站，勾上下面红框框住的选项就可以了。如果只选择当前需要的一个网站，勾选Show only in-scope items。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189305/b7_a5pfvo.png"></p>
+<p>右键点击选择Spider this host（爬虫到该主机），并点击YES。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189405/b8_orhwga.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189405/b9_j5kiep.png"></p>
+<p>可以看到加载进了下列展示的标签。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189555/b10_xgw4ky.png"></p>
+<p>如果不填写任何表单，可在Spide——options，勾选如下设置。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189625/b11_xmfchs.png"></p>
+<p>在下面页面可以看到一共爬取了2万多比特。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189693/b12_n36cac.png"></p>
+<p>爬完之后可以看到爬取的目录。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189779/b13_zmcxlm.png"></p>
+<p><strong>扫描漏洞：</strong></p>
+<p>双击para，会选中有参数的记录。右键点击Actively scan selected items选项。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189954/b14_lellm4.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189952/b15_f9bdsr.jpg"></p>
+<p>就会自动过滤重复的页面或数据，然后点next——点ok。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686190207/b16_ddcedd.png"></p>
+<p>再Scanner——Scan queue就可以看到扫描的情况。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686190316/b17_xofhrh.jpg"></p>
+<p>再Scanner下的Issue defintion可以定义扫什么样的漏洞。</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686190388/b18_gudzct.jpg"></p>
 
                 
             </div>
@@ -393,7 +419,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://matane100.github.io/2023/04/06/nmap-shi-yong-zhi-nan/">https://matane100.github.io/2023/04/06/nmap-shi-yong-zhi-nan/</a>
+                    <a href="https://matane100.github.io/2023/04/21/burp-suite-shi-yong-jiao-cheng/">https://matane100.github.io/2023/04/21/burp-suite-shi-yong-jiao-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -431,8 +457,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/nmap/">
-                                    <span class="chip bg-color">nmap</span>
+                                <a href="/tags/Burp-Suite/">
+                                    <span class="chip bg-color">Burp Suite</span>
                                 </a>
                             
                         </div>
@@ -515,12 +541,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/04/21/netcat-shi-yong-ji-qiao/">
+                <a href="/2023/05/24/wireshark-shi-yong-jiao-cheng/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/netcat.jpg" class="responsive-img" alt="netcat使用技巧">
+                        <img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031753496.jpg" class="responsive-img" alt="wireshark抓包新手使用教程">
                         
-                        <span class="card-title">netcat使用技巧</span>
+                        <span class="card-title">wireshark抓包新手使用教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -531,7 +557,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-24
                         </span>
                         <span class="publish-author">
                             
@@ -548,8 +574,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/netcat/">
-                        <span class="chip bg-color">netcat</span>
+                    <a href="/tags/wireshark/">
+                        <span class="chip bg-color">wireshark</span>
                     </a>
                     
                 </div>
@@ -563,12 +589,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/01/awvs-sao-miao-shi-yong-jiao-cheng/">
+                <a href="/2023/04/21/invicti-shi-yong-jiao-cheng/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/awvs.png" class="responsive-img" alt="AWVS扫描使用教程">
+                        <img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686186740/Invicti_g7yrpz.png" class="responsive-img" alt="Invicti v22.11.0破解版（原Netsparker)">
                         
-                        <span class="card-title">AWVS扫描使用教程</span>
+                        <span class="card-title">Invicti v22.11.0破解版（原Netsparker)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -579,7 +605,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-21
                             </span>
                         <span class="publish-author">
                             
@@ -596,8 +622,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/AWVS/">
-                        <span class="chip bg-color">AWVS</span>
+                    <a href="/tags/invicti/">
+                        <span class="chip bg-color">invicti</span>
                     </a>
                     
                 </div>

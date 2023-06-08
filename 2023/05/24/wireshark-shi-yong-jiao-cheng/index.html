@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="netcat使用技巧, 黎明前的黑暗">
-    <meta name="description" content="Burp SuiteBurp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站">
+    <meta name="keywords" content="wireshark抓包新手使用教程, 黎明前的黑暗">
+    <meta name="description" content="1、wireshark启动后，wireshark处于抓包状态中。
+2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。
+操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>netcat使用技巧 | 黎明前的黑暗</title>
+    <title>wireshark抓包新手使用教程 | 黎明前的黑暗</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -228,12 +230,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/netcat.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031753496.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">netcat使用技巧</h1>
+                    <h1 class="description center-align post-title">wireshark抓包新手使用教程</h1>
                 </div>
             </div>
         </div>
@@ -257,8 +259,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/netcat/">
-                                <span class="chip bg-color">netcat</span>
+                            <a href="/tags/wireshark/">
+                                <span class="chip bg-color">wireshark</span>
                             </a>
                         
                     </div>
@@ -282,21 +284,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-21
+                    2023-05-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-08
+                    2023-06-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    911
+                    781
                 </div>
                 
 
@@ -323,76 +325,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Burp-Suite"><a href="#Burp-Suite" class="headerlink" title="Burp Suite"></a>Burp Suite</h1><p>Burp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站上的安全漏洞或访问受限制的部分。</p>
-<p>该解决方案有三种版本：免费版、专业版和企业版。</p>
-<p>主要特点：</p>
-<ul>
-<li>轻松点击即可实现全自动动态扫描；</li>
-<li>开箱即用的扫描配置；</li>
-<li>基于角色的访问控制和单点登录；</li>
-<li>CI集成；</li>
-<li>超过250个自定义测试工作流扩展；</li>
-</ul>
-<ol>
-<li><p>Target(目标)——显示目标目录结构的的一个功能</p>
-</li>
-<li><p>Proxy(代理)——拦截HTTP&#x2F;S的代理服务器，作为一个在浏览器和目标应用程序之间的中间人，允许你拦截，查看，修改在两个方向上的原始数据流。</p>
-</li>
-<li><p>Spider(蜘蛛)——应用智能感应的网络爬虫，它能完整的枚举应用程序的内容和功能。</p>
-</li>
-<li><p>Scanner(扫描器)——高级工具，执行后，它能自动地发现web 应用程序的安全漏洞。</p>
-</li>
-<li><p>Intruder(入侵)——一个定制的高度可配置的工具，对web应用程序进行自动化攻击，如：枚举标识符，收集有用的数据，以及使用fuzzing 技术探测常规漏洞。</p>
-</li>
-<li><p>Repeater(中继器)——一个靠手动操作来触发单独的HTTP 请求，并分析应用程序响应的工具。</p>
-</li>
-<li><p>Sequencer(会话)——用来分析那些不可预知的应用程序会话令牌和重要数据项的随机性的工具。</p>
-</li>
-<li><p>Decoder(解码器)——进行手动执行或对应用程序数据者智能解码编码的工具。</p>
-</li>
-<li><p>Comparer(对比)——通常是通过一些相关的请求和响应得到两项数据的一个可视化的“差异”。</p>
-</li>
-<li><p>Extender(扩展)——可以让你加载Burp Suite的扩展，使用你自己的或第三方代码来扩展Burp Suit的功能。</p>
-</li>
-<li><p>Options(设置)——对Burp Suite的一些设置。</p>
-</li>
-</ol>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188383/b1_twy2v9.png"></p>
-<p><strong>捕获HTTP数据包：</strong></p>
-<p>以firefox火狐浏览器为例：点击选项——高级——网络——设置——选择手动配置代理,HTTP代理输入：127.0.0.1端口：8080</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188477/b2_mxs5ak.png"></p>
-<p>打开burpsuite，点击proxy——Options勾选127.0.0.1:8080。在Intercept点击后显示Intercept on，启动。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188622/b3_ggs3f2.png"></p>
-<p>在firefox浏览器输入访问的真实地址，列如在网址输入10.1.1.174&#x2F;login.php，username输入test，password也输入test。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188622/b4_f4odsc.png"></p>
-<p>点击Login，页面卡住了，下面burpsuite闪框提示有新的数据传入，打开看抓包信息。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686188623/b5_ybymnm.png"></p>
-<p><strong>爬虫：</strong></p>
-<p>在Target可以看到网站的目录结构。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189191/b6_hi628b.png"></p>
-<p>可以选择只显示有回显的数据或网站，勾上下面红框框住的选项就可以了。如果只选择当前需要的一个网站，勾选Show only in-scope items。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189305/b7_a5pfvo.png"></p>
-<p>右键点击选择Spider this host（爬虫到该主机），并点击YES。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189405/b8_orhwga.png"></p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189405/b9_j5kiep.png"></p>
-<p>可以看到加载进了下列展示的标签。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189555/b10_xgw4ky.png"></p>
-<p>如果不填写任何表单，可在Spide——options，勾选如下设置。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189625/b11_xmfchs.png"></p>
-<p>在下面页面可以看到一共爬取了2万多比特。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189693/b12_n36cac.png"></p>
-<p>爬完之后可以看到爬取的目录。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189779/b13_zmcxlm.png"></p>
-<p><strong>扫描漏洞：</strong></p>
-<p>双击para，会选中有参数的记录。右键点击Actively scan selected items选项。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189954/b14_lellm4.png"></p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686189952/b15_f9bdsr.jpg"></p>
-<p>就会自动过滤重复的页面或数据，然后点next——点ok。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686190207/b16_ddcedd.png"></p>
-<p>再Scanner——Scan queue就可以看到扫描的情况。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686190316/b17_xofhrh.jpg"></p>
-<p>再Scanner下的Issue defintion可以定义扫什么样的漏洞。</p>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686190388/b18_gudzct.jpg"></p>
+                <h2 id="1、wireshark启动后，wireshark处于抓包状态中。"><a href="#1、wireshark启动后，wireshark处于抓包状态中。" class="headerlink" title="1、wireshark启动后，wireshark处于抓包状态中。"></a>1、wireshark启动后，wireshark处于抓包状态中。</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
+<h2 id="2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。"><a href="#2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。" class="headerlink" title="2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。"></a>2、执行需要抓包的操作，如在cmd窗口下执行ping <a target="_blank" rel="noopener" href="http://www.baidu.com./">www.baidu.com。</a></h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
+<p>操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
+<h2 id="3、Wireshakr抓包界面介绍"><a href="#3、Wireshakr抓包界面介绍" class="headerlink" title="3、Wireshakr抓包界面介绍"></a>3、Wireshakr抓包界面介绍</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031626223.png"></p>
+<h2 id="4、WireShark-主要分为这几个界面"><a href="#4、WireShark-主要分为这几个界面" class="headerlink" title="4、WireShark 主要分为这几个界面"></a>4、WireShark 主要分为这几个界面</h2><p>Display Filter(显示过滤器)， 用于设置过滤条件进行数据包列表过滤。菜单路径：Analyze –&gt; Display Filters。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031634706.png"></p>
+<p>Packet List Pane(数据包列表)， 显示捕获到的数据包，每个数据包包含编号，时间戳，源地址，目标地址，协议，长度，以及数据包信息。 不同协议的数据包使用了不同的颜色区分显示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031649468.png"></p>
+<p>Packet Details Pane(数据包详细信息), 在数据包列表中选择指定数据包，在数据包详细信息中会显示数据包的所有详细信息内容。数据包详细信息面板是最重要的，用来查看协议中的每一个字段。各行信息分别为</p>
+<p> （1）Frame:  物理层的数据帧概况</p>
+<p> （2）Ethernet II: 数据链路层以太网帧头部信息</p>
+<p> （3）Internet Protocol Version 4: 互联网层IP包头部信息</p>
+<p> （4）Transmission Control Protocol: 传输层T的数据段头部信息，此处是TCP</p>
+<p> （5）Hypertext Transfer Protocol: 应用层的信息，此处是HTTP协议</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031653476.png"></p>
+<h2 id="5、TCP包的具体内容"><a href="#5、TCP包的具体内容" class="headerlink" title="5、TCP包的具体内容"></a>5、TCP包的具体内容</h2><p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031659629.png"></p>
+<h3 id="ip过滤"><a href="#ip过滤" class="headerlink" title="ip过滤"></a>ip过滤</h3><p>  ip.src &#x3D;&#x3D;192.168.1.104 显示源地址为192.168.1.104的数据包列表</p>
+<p>  ip.dst&#x3D;&#x3D;192.168.1.104, 显示目标地址为192.168.1.104的数据包列表</p>
+<p>  ip.addr &#x3D;&#x3D; 192.168.1.104 显示源IP地址或目标IP地址为192.168.1.104的数据包列表</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031725106.png"></p>
+<h3 id="端口过滤"><a href="#端口过滤" class="headerlink" title="端口过滤"></a>端口过滤</h3><p> tcp.port &#x3D;&#x3D;80, 显示源主机或者目的主机端口为80的数据包列表。</p>
+<p> tcp.srcport &#x3D;&#x3D; 80, 只显示TCP协议的源主机端口为80的数据包列表。</p>
+<p> tcp.dstport &#x3D;&#x3D; 80，只显示TCP协议的目的主机端口为80的数据包列表。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031727211.png"></p>
+<h2 id="Wireshark抓包分析TCP三次握手"><a href="#Wireshark抓包分析TCP三次握手" class="headerlink" title="Wireshark抓包分析TCP三次握手"></a>Wireshark抓包分析TCP三次握手</h2><p>（1）TCP三次握手连接建立过程</p>
+<p>  Step1：客户端发送一个SYN&#x3D;1，ACK&#x3D;0标志的数据包给服务端，请求进行连接，这是第一次握手；</p>
+<p>  Step2：服务端收到请求并且允许连接的话，就会发送一个SYN&#x3D;1，ACK&#x3D;1标志的数据包给发送端，告诉它，可以通讯了，并且让客户    端发送一个确认数据包，这是第二次握手；</p>
+<p>  Step3：服务端发送一个SYN&#x3D;0，ACK&#x3D;1的数据包给客户端端，告诉它连接已被确认，这就是第三次握手。TCP连接建立，开始通讯。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
 
                 
             </div>
@@ -419,7 +381,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://matane100.github.io/2023/04/21/hello-world/">https://matane100.github.io/2023/04/21/hello-world/</a>
+                    <a href="https://matane100.github.io/2023/05/24/wireshark-shi-yong-jiao-cheng/">https://matane100.github.io/2023/05/24/wireshark-shi-yong-jiao-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -457,8 +419,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/netcat/">
-                                    <span class="chip bg-color">netcat</span>
+                                <a href="/tags/wireshark/">
+                                    <span class="chip bg-color">wireshark</span>
                                 </a>
                             
                         </div>
@@ -537,11 +499,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/">
+                <a href="/2023/05/24/wireshark-shi-yong-jiao-cheng/">
                     <div class="card-image">
                         
                         <img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031753496.jpg" class="responsive-img" alt="wireshark抓包新手使用教程">
@@ -556,9 +519,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -571,6 +534,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -589,12 +553,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/21/invicti-shi-yong/">
+                <a href="/2023/04/21/burp-suite-shi-yong-jiao-cheng/">
                     <div class="card-image">
                         
-                        <img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686186740/Invicti_g7yrpz.png" class="responsive-img" alt="Invicti v22.11.0破解版（原Netsparker)">
+                        <img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686191124/Burp-Suite-1024x677_acvqs1.jpg" class="responsive-img" alt="Burp Suite使用技巧">
                         
-                        <span class="card-title">Invicti v22.11.0破解版（原Netsparker)</span>
+                        <span class="card-title">Burp Suite使用技巧</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -622,8 +586,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/invicti/">
-                        <span class="chip bg-color">invicti</span>
+                    <a href="/tags/Burp-Suite/">
+                        <span class="chip bg-color">Burp Suite</span>
                     </a>
                     
                 </div>

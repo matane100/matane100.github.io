@@ -18,8 +18,8 @@
   
   <entry>
     <title>wireshark抓包新手使用教程</title>
-    <link href="https://matane100.github.io/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/"/>
-    <id>https://matane100.github.io/2023/05/24/wireshark-zhua-bao-xin-shou-shi-yong-jiao-cheng/</id>
+    <link href="https://matane100.github.io/2023/05/24/wireshark-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2023/05/24/wireshark-shi-yong-jiao-cheng/</id>
     <published>2023-05-24T04:08:15.000Z</published>
     <updated>2023-06-04T07:35:16.175Z</updated>
     
@@ -42,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>netcat使用技巧</title>
-    <link href="https://matane100.github.io/2023/04/21/hello-world/"/>
-    <id>https://matane100.github.io/2023/04/21/hello-world/</id>
+    <title>Burp Suite使用技巧</title>
+    <link href="https://matane100.github.io/2023/04/21/burp-suite-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2023/04/21/burp-suite-shi-yong-jiao-cheng/</id>
     <published>2023-04-21T04:15:41.000Z</published>
-    <updated>2023-06-08T02:13:54.690Z</updated>
+    <updated>2023-06-08T02:25:59.246Z</updated>
     
     
       
@@ -62,14 +62,14 @@
     <category term="黑客工具" scheme="https://matane100.github.io/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="netcat" scheme="https://matane100.github.io/tags/netcat/"/>
+    <category term="Burp Suite" scheme="https://matane100.github.io/tags/Burp-Suite/"/>
     
   </entry>
   
   <entry>
     <title>Invicti v22.11.0破解版（原Netsparker)</title>
-    <link href="https://matane100.github.io/2023/04/21/invicti-shi-yong/"/>
-    <id>https://matane100.github.io/2023/04/21/invicti-shi-yong/</id>
+    <link href="https://matane100.github.io/2023/04/21/invicti-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2023/04/21/invicti-shi-yong-jiao-cheng/</id>
     <published>2023-04-21T04:15:41.000Z</published>
     <updated>2023-06-08T01:27:29.943Z</updated>
     
@@ -93,8 +93,8 @@
   
   <entry>
     <title>netcat使用技巧</title>
-    <link href="https://matane100.github.io/2023/04/21/netcat-shi-yong-ji-qiao/"/>
-    <id>https://matane100.github.io/2023/04/21/netcat-shi-yong-ji-qiao/</id>
+    <link href="https://matane100.github.io/2023/04/21/netcat-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2023/04/21/netcat-shi-yong-jiao-cheng/</id>
     <published>2023-04-21T04:15:41.000Z</published>
     <updated>2023-04-26T13:03:03.047Z</updated>
     
@@ -118,8 +118,8 @@
   
   <entry>
     <title>nmap使用教程</title>
-    <link href="https://matane100.github.io/2023/04/06/nmap-shi-yong-zhi-nan/"/>
-    <id>https://matane100.github.io/2023/04/06/nmap-shi-yong-zhi-nan/</id>
+    <link href="https://matane100.github.io/2023/04/06/nmap-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2023/04/06/nmap-shi-yong-jiao-cheng/</id>
     <published>2023-04-06T11:49:43.000Z</published>
     <updated>2023-06-04T07:35:42.127Z</updated>
     
