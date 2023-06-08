@@ -143,8 +143,8 @@
   
   <entry>
     <title>AWVS扫描使用教程</title>
-    <link href="https://matane100.github.io/2023/04/01/awvs-sao-miao-shi-yong-jiao-cheng/"/>
-    <id>https://matane100.github.io/2023/04/01/awvs-sao-miao-shi-yong-jiao-cheng/</id>
+    <link href="https://matane100.github.io/2023/04/01/awvs-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2023/04/01/awvs-shi-yong-jiao-cheng/</id>
     <published>2023-04-01T13:32:24.000Z</published>
     <updated>2023-06-08T01:04:17.568Z</updated>
     
@@ -192,11 +192,11 @@
   </entry>
   
   <entry>
-    <title>linux</title>
-    <link href="https://matane100.github.io/2022/08/12/linux/"/>
-    <id>https://matane100.github.io/2022/08/12/linux/</id>
+    <title>Nikto详细使用教程</title>
+    <link href="https://matane100.github.io/2022/08/12/nikto-shi-yong-jiao-cheng/"/>
+    <id>https://matane100.github.io/2022/08/12/nikto-shi-yong-jiao-cheng/</id>
     <published>2022-08-12T10:41:53.000Z</published>
-    <updated>2023-06-03T10:30:22.585Z</updated>
+    <updated>2023-06-08T02:59:47.779Z</updated>
     
     
       
@@ -209,10 +209,10 @@
     
     
     
-    <category term="操作系统" scheme="https://matane100.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="黑客工具" scheme="https://matane100.github.io/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="kali Linux" scheme="https://matane100.github.io/tags/kali-Linux/"/>
+    <category term="Nikto" scheme="https://matane100.github.io/tags/Nikto/"/>
     
   </entry>
   
