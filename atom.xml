@@ -42,6 +42,31 @@
   </entry>
   
   <entry>
+    <title>netcat使用技巧</title>
+    <link href="https://matane100.github.io/2023/04/21/hello-world/"/>
+    <id>https://matane100.github.io/2023/04/21/hello-world/</id>
+    <published>2023-04-21T04:15:41.000Z</published>
+    <updated>2023-06-08T02:13:54.690Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="黑客工具" scheme="https://matane100.github.io/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="netcat" scheme="https://matane100.github.io/tags/netcat/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Invicti v22.11.0破解版（原Netsparker)</title>
     <link href="https://matane100.github.io/2023/04/21/invicti-shi-yong/"/>
     <id>https://matane100.github.io/2023/04/21/invicti-shi-yong/</id>
@@ -138,31 +163,6 @@
     
     
     <category term="AWVS" scheme="https://matane100.github.io/tags/AWVS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://matane100.github.io/2023/04/01/hello-world/"/>
-    <id>https://matane100.github.io/2023/04/01/hello-world/</id>
-    <published>2023-04-01T05:27:58.904Z</published>
-    <updated>2023-04-05T23:57:15.307Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="渗透工具" scheme="https://matane100.github.io/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="sqlmap工具" scheme="https://matane100.github.io/tags/sqlmap%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
