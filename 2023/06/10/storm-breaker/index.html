@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="wireshark抓包新手使用教程, 黎明前的黑暗">
-    <meta name="description" content="1、wireshark启动后，wireshark处于抓包状态中。
-2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。
-操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条">
+    <meta name="keywords" content="Storm Breaker使用教程, 黎明前的黑暗">
+    <meta name="description" content="Storm Breaker（战斧）1、介绍本工具是在GitHub上大神出品。能够在定位，获取视频，监听通话内容。极品工具。
+作者源码和目前的更新的系统有冲突，经过改写源码后，在marjiaro linux 系统中安装成功使用。
+源码地址：h">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>wireshark抓包新手使用教程 | 黎明前的黑暗</title>
+    <title>Storm Breaker使用教程 | 黎明前的黑暗</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -230,12 +230,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031753496.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/1demo.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">wireshark抓包新手使用教程</h1>
+                    <h1 class="description center-align post-title">Storm Breaker使用教程</h1>
                 </div>
             </div>
         </div>
@@ -259,8 +259,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/wireshark/">
-                                <span class="chip bg-color">wireshark</span>
+                            <a href="/tags/Storm-Breaker/">
+                                <span class="chip bg-color">Storm Breaker</span>
                             </a>
                         
                     </div>
@@ -284,28 +284,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-05-24
+                    2023-06-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-04
+                    2023-06-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    781
+                    257
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -325,36 +325,44 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1、wireshark启动后，wireshark处于抓包状态中。"><a href="#1、wireshark启动后，wireshark处于抓包状态中。" class="headerlink" title="1、wireshark启动后，wireshark处于抓包状态中。"></a>1、wireshark启动后，wireshark处于抓包状态中。</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/w1.png"></p>
-<h2 id="2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。"><a href="#2、执行需要抓包的操作，如在cmd窗口下执行ping-www-baidu-com。" class="headerlink" title="2、执行需要抓包的操作，如在cmd窗口下执行ping www.baidu.com。"></a>2、执行需要抓包的操作，如在cmd窗口下执行ping <a target="_blank" rel="noopener" href="http://www.baidu.com./">www.baidu.com。</a></h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031609424.png"></p>
-<p>操作完成后相关数据包就抓取到了。为避免其他无用的数据包影响分析，可以通过在过滤栏设置过滤条件进行数据包列表过滤，获取结果如下。说明：ip.addr &#x3D;&#x3D; 119.75.217.26 and icmp 表示只显示ICPM协议且源主机IP或者目的主机IP为119.75.217.26的数据包。说明：协议名称icmp要小写。</p>
-<h2 id="3、Wireshakr抓包界面介绍"><a href="#3、Wireshakr抓包界面介绍" class="headerlink" title="3、Wireshakr抓包界面介绍"></a>3、Wireshakr抓包界面介绍</h2><p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031626223.png"></p>
-<h2 id="4、WireShark-主要分为这几个界面"><a href="#4、WireShark-主要分为这几个界面" class="headerlink" title="4、WireShark 主要分为这几个界面"></a>4、WireShark 主要分为这几个界面</h2><p>Display Filter(显示过滤器)， 用于设置过滤条件进行数据包列表过滤。菜单路径：Analyze –&gt; Display Filters。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag/test/202306031634706.png"></p>
-<p>Packet List Pane(数据包列表)， 显示捕获到的数据包，每个数据包包含编号，时间戳，源地址，目标地址，协议，长度，以及数据包信息。 不同协议的数据包使用了不同的颜色区分显示。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031649468.png"></p>
-<p>Packet Details Pane(数据包详细信息), 在数据包列表中选择指定数据包，在数据包详细信息中会显示数据包的所有详细信息内容。数据包详细信息面板是最重要的，用来查看协议中的每一个字段。各行信息分别为</p>
-<p> （1）Frame:  物理层的数据帧概况</p>
-<p> （2）Ethernet II: 数据链路层以太网帧头部信息</p>
-<p> （3）Internet Protocol Version 4: 互联网层IP包头部信息</p>
-<p> （4）Transmission Control Protocol: 传输层T的数据段头部信息，此处是TCP</p>
-<p> （5）Hypertext Transfer Protocol: 应用层的信息，此处是HTTP协议</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031653476.png"></p>
-<h2 id="5、TCP包的具体内容"><a href="#5、TCP包的具体内容" class="headerlink" title="5、TCP包的具体内容"></a>5、TCP包的具体内容</h2><p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031659629.png"></p>
-<h3 id="ip过滤"><a href="#ip过滤" class="headerlink" title="ip过滤"></a>ip过滤</h3><p>  ip.src &#x3D;&#x3D;192.168.1.104 显示源地址为192.168.1.104的数据包列表</p>
-<p>  ip.dst&#x3D;&#x3D;192.168.1.104, 显示目标地址为192.168.1.104的数据包列表</p>
-<p>  ip.addr &#x3D;&#x3D; 192.168.1.104 显示源IP地址或目标IP地址为192.168.1.104的数据包列表</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031725106.png"></p>
-<h3 id="端口过滤"><a href="#端口过滤" class="headerlink" title="端口过滤"></a>端口过滤</h3><p> tcp.port &#x3D;&#x3D;80, 显示源主机或者目的主机端口为80的数据包列表。</p>
-<p> tcp.srcport &#x3D;&#x3D; 80, 只显示TCP协议的源主机端口为80的数据包列表。</p>
-<p> tcp.dstport &#x3D;&#x3D; 80，只显示TCP协议的目的主机端口为80的数据包列表。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031727211.png"></p>
-<h2 id="Wireshark抓包分析TCP三次握手"><a href="#Wireshark抓包分析TCP三次握手" class="headerlink" title="Wireshark抓包分析TCP三次握手"></a>Wireshark抓包分析TCP三次握手</h2><p>（1）TCP三次握手连接建立过程</p>
-<p>  Step1：客户端发送一个SYN&#x3D;1，ACK&#x3D;0标志的数据包给服务端，请求进行连接，这是第一次握手；</p>
-<p>  Step2：服务端收到请求并且允许连接的话，就会发送一个SYN&#x3D;1，ACK&#x3D;1标志的数据包给发送端，告诉它，可以通讯了，并且让客户    端发送一个确认数据包，这是第二次握手；</p>
-<p>  Step3：服务端发送一个SYN&#x3D;0，ACK&#x3D;1的数据包给客户端端，告诉它连接已被确认，这就是第三次握手。TCP连接建立，开始通讯。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/202306031719627.png"></p>
+                <h1 id="Storm-Breaker（战斧）"><a href="#Storm-Breaker（战斧）" class="headerlink" title="Storm Breaker（战斧）"></a>Storm Breaker（战斧）</h1><h2 id="1、介绍"><a href="#1、介绍" class="headerlink" title="1、介绍"></a>1、介绍</h2><p>本工具是在GitHub上大神出品。能够在定位，获取视频，监听通话内容。极品工具。</p>
+<p>作者源码和目前的更新的系统有冲突，经过改写源码后，在marjiaro linux 系统中安装成功使用。</p>
+<p>源码地址：<a target="_blank" rel="noopener" href="https://github.com/ultrasecurity/Storm-Breaker.git">https://github.com/ultrasecurity/Storm-Breaker.git</a></p>
+<h2 id="2、依赖关系"><a href="#2、依赖关系" class="headerlink" title="2、依赖关系"></a>2、依赖关系</h2><p>**<code>Storm Breaker</code>**需要以下程序才能正常运行 -</p>
+<ul>
+<li><code>php</code></li>
+<li><code>python3</code></li>
+<li><code>git</code></li>
+<li>Ngrok</li>
+</ul>
+<h2 id="3、安装步骤"><a href="#3、安装步骤" class="headerlink" title="3、安装步骤"></a>3、安装步骤</h2><p>1、安装Ngrok</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/s1.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686389156/s2_rtirzk.png"></p>
+<p>2、生成这个token</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686389403/s3_yuexjf.png"></p>
+<p>3、安装后如图</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686389622/st1_eye0ls.png"></p>
+<p>4、安装</p>
+<h3 id="在-Kali-Linux-上安装"><a href="#在-Kali-Linux-上安装" class="headerlink" title="在 Kali Linux 上安装"></a>在 Kali Linux 上安装</h3><pre class=" language-shell"><code class="language-shell">$ git clone https://github.com/ultrasecurity/Storm-Breaker.git
+$ cd Storm-Breaker
+$ sudo bash install.sh
+$ sudo pip3 install -r requirements.txt
+$ sudo python3 st.py
+</code></pre>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686390311/st2_l8hbdw.png"></p>
+<p>ngrok http 2525 在终端中运行如图下</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686391430/s4_ytbag1.png"></p>
+<p>在谷歌浏览器中打开连接</p>
+<p><a target="_blank" rel="noopener" href="https://69b2-121-29-169-133.ngrok-free.app/">https://69b2-121-29-169-133.ngrok-free.app</a>  </p>
+<p>用户名和密码都是：admin</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686391771/s5_kvydkz.png"></p>
+<p>进入后</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392023/s6_wviipc.png"></p>
+<p>复制连接在浏览器打开，可以换域名或者整个连接</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392723/s7_jwv2oz.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392722/s10_nwalyb.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392722/s9_unulfg.png"></p>
+<p>连接有语音，还有摄像头，第一个连接，这里就不演示了，可以自己尝试，谢谢。</p>
 
                 
             </div>
@@ -381,7 +389,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://matane100.github.io/2023/05/24/wireshark-shi-yong-jiao-cheng/">https://matane100.github.io/2023/05/24/wireshark-shi-yong-jiao-cheng/</a>
+                    <a href="https://matane100.github.io/2023/06/10/storm-breaker/">https://matane100.github.io/2023/06/10/storm-breaker/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -419,8 +427,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/wireshark/">
-                                    <span class="chip bg-color">wireshark</span>
+                                <a href="/tags/Storm-Breaker/">
+                                    <span class="chip bg-color">Storm Breaker</span>
                                 </a>
                             
                         </div>
@@ -499,9 +507,59 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/06/10/storm-breaker/">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/1demo.png" class="responsive-img" alt="Storm Breaker使用教程">
+                        
+                        <span class="card-title">Storm Breaker使用教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    黑客工具
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Storm-Breaker/">
+                        <span class="chip bg-color">Storm Breaker</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/05/24/kismet-shi-yong-jiao-cheng/">
                     <div class="card-image">
@@ -518,9 +576,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -538,54 +596,6 @@
                     
                     <a href="/tags/Kismet/">
                         <span class="chip bg-color">Kismet</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/04/21/invicti-shi-yong-jiao-cheng/">
-                    <div class="card-image">
-                        
-                        <img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686186740/Invicti_g7yrpz.png" class="responsive-img" alt="Invicti v22.11.0破解版（原Netsparker)">
-                        
-                        <span class="card-title">Invicti v22.11.0破解版（原Netsparker)</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-21
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    黑客工具
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/invicti/">
-                        <span class="chip bg-color">invicti</span>
                     </a>
                     
                 </div>

@@ -42,8 +42,57 @@
       </tags>
   </entry>
   <entry>
+    <title>Storm Breaker使用教程</title>
+    <url>/2023/06/10/storm-breaker/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Storm-Breaker（战斧）"><a href="#Storm-Breaker（战斧）" class="headerlink" title="Storm Breaker（战斧）"></a>Storm Breaker（战斧）</h1><h2 id="1、介绍"><a href="#1、介绍" class="headerlink" title="1、介绍"></a>1、介绍</h2><p>本工具是在GitHub上大神出品。能够在定位，获取视频，监听通话内容。极品工具。</p>
+<p>作者源码和目前的更新的系统有冲突，经过改写源码后，在marjiaro linux 系统中安装成功使用。</p>
+<p>源码地址：<a href="https://github.com/ultrasecurity/Storm-Breaker.git">https://github.com/ultrasecurity/Storm-Breaker.git</a></p>
+<h2 id="2、依赖关系"><a href="#2、依赖关系" class="headerlink" title="2、依赖关系"></a>2、依赖关系</h2><p>**<code>Storm Breaker</code>**需要以下程序才能正常运行 -</p>
+<ul>
+<li><code>php</code></li>
+<li><code>python3</code></li>
+<li><code>git</code></li>
+<li>Ngrok</li>
+</ul>
+<h2 id="3、安装步骤"><a href="#3、安装步骤" class="headerlink" title="3、安装步骤"></a>3、安装步骤</h2><p>1、安装Ngrok</p>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/s1.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686389156/s2_rtirzk.png"></p>
+<p>2、生成这个token</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686389403/s3_yuexjf.png"></p>
+<p>3、安装后如图</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686389622/st1_eye0ls.png"></p>
+<p>4、安装</p>
+<h3 id="在-Kali-Linux-上安装"><a href="#在-Kali-Linux-上安装" class="headerlink" title="在 Kali Linux 上安装"></a>在 Kali Linux 上安装</h3><pre class=" language-shell"><code class="language-shell">$ git clone https://github.com/ultrasecurity/Storm-Breaker.git
+$ cd Storm-Breaker
+$ sudo bash install.sh
+$ sudo pip3 install -r requirements.txt
+$ sudo python3 st.py
+</code></pre>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686390311/st2_l8hbdw.png"></p>
+<p>ngrok http 2525 在终端中运行如图下</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686391430/s4_ytbag1.png"></p>
+<p>在谷歌浏览器中打开连接</p>
+<p><a href="https://69b2-121-29-169-133.ngrok-free.app/">https://69b2-121-29-169-133.ngrok-free.app</a>  </p>
+<p>用户名和密码都是：admin</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686391771/s5_kvydkz.png"></p>
+<p>进入后</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392023/s6_wviipc.png"></p>
+<p>复制连接在浏览器打开，可以换域名或者整个连接</p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392723/s7_jwv2oz.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392722/s10_nwalyb.png"></p>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686392722/s9_unulfg.png"></p>
+<p>连接有语音，还有摄像头，第一个连接，这里就不演示了，可以自己尝试，谢谢。</p>
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>Storm Breaker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Kismet使用教程</title>
-    <url>/2023/05/24/python/</url>
+    <url>/2023/05/24/kismet-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Kismet"><a href="#Kismet" class="headerlink" title="Kismet"></a>Kismet</h1><p>Kismet是列表中最流行的工具之一。它是一个开源的解决方案，可以作为802.11无线局域网的网络检测器、数据包嗅探器和入侵检测系统。任何支持原始监控模式并能够嗅探802.11a、802.11b、802.11g和802.11n流量的无线卡都将与Kismet兼容。Linux、FreeBSD、NetBSD、 OpenBSD和Mac OS X都支持该程序。客户端也可以在Windows上运行。</p>
 <p>主要特点：</p>
 <ul>
