@@ -42,8 +42,19 @@
       </tags>
   </entry>
   <entry>
-    <title>一个能自动生成攻击载荷和监听的网站</title>
-    <url>/2023/06/11/yi-ge-neng-zi-dong-sheng-cheng-gong-ji-zai-he-he-jian-ting-de-wang-zhan/</url>
+    <title>临时邮箱</title>
+    <url>/2023/06/11/lin-shi-you-xiang/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>分类</category>
+      </categories>
+      <tags>
+        <tag>标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自动生成攻击载荷和监听</title>
+    <url>/2023/06/11/zi-dong-sheng-cheng-gong-ji-zai-he/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.revshells.com/">https://www.revshells.com/</a></p>
 <p>能够生成，安卓，PC ，苹果 木马和监听连接</p>
 <p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/5555555.png"></p>
