@@ -42,6 +42,27 @@
       </tags>
   </entry>
   <entry>
+    <title>linux终端翻墙</title>
+    <url>/2023/06/12/linux-zhong-duan-fan-qiang/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux-终端翻墙"><a href="#linux-终端翻墙" class="headerlink" title="linux 终端翻墙"></a>linux 终端翻墙</h1><h2 id="1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。"><a href="#1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。" class="headerlink" title="1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。"></a>1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。</h2><pre class=" language-shell"><code class="language-shell">export http_proxy="http://localhost:port"
+export https_proxy="http://localhost:port"
+</code></pre>
+<h2 id="2、长久使用，可以这样安排。"><a href="#2、长久使用，可以这样安排。" class="headerlink" title="2、长久使用，可以这样安排。"></a>2、长久使用，可以这样安排。</h2><p>改相应工具的配置，比如apt的配置</p>
+<pre class=" language-shell"><code class="language-shell">sudo vim /etc/apt/apt.conf
+</code></pre>
+<p>在文件末尾加入下面这行</p>
+<pre class=" language-shell"><code class="language-shell">Acquire::http::Proxy "http://proxyAddress:port"
+Acquire::http::Proxy "https://proxyAddress:port"
+</code></pre>
+]]></content>
+      <categories>
+        <category>Linux常识</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>临时邮箱</title>
     <url>/2023/06/11/lin-shi-you-xiang/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="临时邮箱"><a href="#临时邮箱" class="headerlink" title="临时邮箱"></a>临时邮箱</h1><p>当注册，发送匿名邮件时候，需要一个防止跟踪的邮箱。国内的基本都要手机号，很恶心，很不方便。</p>
