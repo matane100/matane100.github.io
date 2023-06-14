@@ -42,6 +42,37 @@
       </tags>
   </entry>
   <entry>
+    <title>beef的安装</title>
+    <url>/2023/06/14/beef-de-an-zhuang/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="beef安装指南"><a href="#beef安装指南" class="headerlink" title="beef安装指南"></a>beef安装指南</h1><p>为什么要安装BEEF，因为这个软件很强大，很牛逼，既可以在局域网内进行渗透，还可以安装在服务器中，进行在网站上的渗透。</p>
+<p>话不多说，懂的自然懂，不懂的也没办法。慢慢理解。消化，吸收。以后会介绍一些牛逼的用法，做一个系列的视频和文章。</p>
+<h2 id="安装步骤："><a href="#安装步骤：" class="headerlink" title="安装步骤："></a>安装步骤：</h2><pre class=" language-shell"><code class="language-shell">sudo apt install ruby ruby-dev
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">sudo apt install git
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">https://github.com/beefproject/beef.git
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">cd beef
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">sudo ./install
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">sudo bundle install --without nothing
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">
+sudo nano config.yaml
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">./beef
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/matane100/blog-imag@main/test/4444444.png"></p>
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>beef</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux终端翻墙</title>
     <url>/2023/06/12/linux-zhong-duan-fan-qiang/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux-终端翻墙"><a href="#linux-终端翻墙" class="headerlink" title="linux 终端翻墙"></a>linux 终端翻墙</h1><h2 id="1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。"><a href="#1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。" class="headerlink" title="1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。"></a>1、在终端中写入下面代码，但是关闭终端后，代理不在起作用。</h2><pre class=" language-shell"><code class="language-shell">export http_proxy="http://localhost:port"
@@ -169,6 +200,27 @@ $ sudo python3 st.py
       </tags>
   </entry>
   <entry>
+    <title>Invicti v22.11.0破解版（原Netsparker)</title>
+    <url>/2023/04/21/invicti-shi-yong-jiao-cheng/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Invicti"><a href="#Invicti" class="headerlink" title="Invicti"></a>Invicti</h3><p>Invicti，之前名为Netsparker，是一个基于web的应用程序安全扫描黑客工具，能够发现SQL注入、XSS、web应用程序中的漏洞。</p>
+<p>主要特点：</p>
+<ul>
+<li>它需要最小的配置；</li>
+<li>它可以在24小时内扫描1000多个网络应用程序；</li>
+<li>自动检测URL重写规则和自定义404错误页面；</li>
+<li>在特殊的基于证明的扫描技术的帮助下，它能以惊人的准确性发现漏洞；</li>
+</ul>
+<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686187562/4a471668222737_iapjh5.png"></p>
+<p>大型企业一般都用，所以在做大型任务时候，必备神器！</p>
+]]></content>
+      <categories>
+        <category>黑客工具</category>
+      </categories>
+      <tags>
+        <tag>invicti</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Burp Suite使用技巧</title>
     <url>/2023/04/21/burp-suite-shi-yong-jiao-cheng/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Burp-Suite"><a href="#Burp-Suite" class="headerlink" title="Burp Suite"></a>Burp Suite</h1><p>Burp Suite是任何道德黑客武器库的重要组成部分。作为评估网站安全性的可靠工具，它是一个代理工具，能够拦截用户浏览器和目标网站之间的请求和响应，还提供了对网站功能的可见性。这使得道德黑客有能力改变这些请求，利用网站上的安全漏洞或访问受限制的部分。</p>
@@ -247,27 +299,6 @@ $ sudo python3 st.py
       </categories>
       <tags>
         <tag>Burp Suite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Invicti v22.11.0破解版（原Netsparker)</title>
-    <url>/2023/04/21/invicti-shi-yong-jiao-cheng/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Invicti"><a href="#Invicti" class="headerlink" title="Invicti"></a>Invicti</h3><p>Invicti，之前名为Netsparker，是一个基于web的应用程序安全扫描黑客工具，能够发现SQL注入、XSS、web应用程序中的漏洞。</p>
-<p>主要特点：</p>
-<ul>
-<li>它需要最小的配置；</li>
-<li>它可以在24小时内扫描1000多个网络应用程序；</li>
-<li>自动检测URL重写规则和自定义404错误页面；</li>
-<li>在特殊的基于证明的扫描技术的帮助下，它能以惊人的准确性发现漏洞；</li>
-</ul>
-<p><img src="https://res.cloudinary.com/dg3ytsk4a/image/upload/v1686187562/4a471668222737_iapjh5.png"></p>
-<p>大型企业一般都用，所以在做大型任务时候，必备神器！</p>
-]]></content>
-      <categories>
-        <category>黑客工具</category>
-      </categories>
-      <tags>
-        <tag>invicti</tag>
       </tags>
   </entry>
   <entry>
